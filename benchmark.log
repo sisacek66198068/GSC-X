@@ -1,0 +1,36 @@
+=== START GSC-X FINAL BOSS V4 REFINE ===
+Thu Apr 30 00:43:26 CEST 2026
+=== GSC-X FINAL BOSS v4 : REFINED ENDURANCE SAFE MODE ===
+running seed 0/2000
+running seed 100/2000
+running seed 200/2000
+running seed 300/2000
+running seed 400/2000
+running seed 500/2000
+running seed 600/2000
+running seed 700/2000
+running seed 800/2000
+running seed 900/2000
+running seed 1000/2000
+running seed 1100/2000
+running seed 1200/2000
+running seed 1300/2000
+running seed 1400/2000
+running seed 1500/2000
+running seed 1600/2000
+running seed 1700/2000
+running seed 1800/2000
+running seed 1900/2000
+
+mode  survival_rate  mean_peak  mean_min_Tcore  mean_max_density  mean_time_unsafe  mean_energy  mean_fusion_yield  mean_yield_per_energy
+gscx          0.924   0.623390        0.826780          1.058486          0.088132    34.206901          82.950407               2.624227
+ pid          0.000   1.301772        0.000088          1.000006         75.381753   640.067811           7.448265               0.011641
+
+RECOVERY MODE FRACTION
+RECOVERY = 0.003
+
+SAVED:
+ fusion_gscx_final_boss_v4_refine_results.csv
+ fusion_gscx_final_boss_v4_refine_summary.csv
+=== DONE ===
+Thu Apr 30 01:08:35 CEST 2026
