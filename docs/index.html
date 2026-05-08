@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GSC-X | Stellar Nonlinear Control</title>
 <style>
-body{margin:0;background:#02040a;color:white;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;background:#02040a;color:white;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 50% 0%,#14223f 0%,#050814 38%,#010208 100%)}
 .hero{position:relative;min-height:100vh;padding:80px 8%;overflow:hidden;background:radial-gradient(circle at 82% 28%,#ffb34755 0%,#ff7a0025 18%,transparent 42%),radial-gradient(circle at 20% 20%,#0077ff22,transparent 35%),linear-gradient(135deg,#02040a,#050814 55%,#08040a)}
 .hero:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 75% 35%,#ff9d0044,transparent 28%),radial-gradient(circle at 65% 55%,#ff330022,transparent 30%),radial-gradient(circle at 88% 20%,#ffffff22,transparent 8%);filter:blur(25px);animation:stellarPulse 9s ease-in-out infinite;pointer-events:none}
 .hero:after{content:"";position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 40% 70%,#fff,transparent),radial-gradient(2px 2px at 70% 20%,#ffd28a,transparent),radial-gradient(1px 1px at 85% 60%,#fff,transparent),radial-gradient(1px 1px at 55% 40%,#8fdcff,transparent);opacity:.32;animation:starDrift 60s linear infinite;pointer-events:none}
@@ -35,11 +35,54 @@ footer{padding:60px 8%;color:#aaa;background:#05070d;line-height:1.9}
 .gsc-core div{font-size:28px;font-weight:bold;color:#baf7ff}
 .gsc-core small{color:#9adce8}
 @keyframes flow{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
-</style>
+
+.space-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:
+radial-gradient(1px 1px at 8% 18%,#fff,transparent),
+radial-gradient(1px 1px at 18% 72%,#fff,transparent),
+radial-gradient(2px 2px at 28% 36%,#ffd28a,transparent),
+radial-gradient(1px 1px at 42% 12%,#fff,transparent),
+radial-gradient(1px 1px at 58% 84%,#8fdcff,transparent),
+radial-gradient(2px 2px at 72% 28%,#fff,transparent),
+radial-gradient(1px 1px at 86% 68%,#fff,transparent),
+radial-gradient(1px 1px at 94% 22%,#ffd28a,transparent);
+opacity:.42;animation:spaceDrift 80s linear infinite}
+.nebula-bg{position:fixed;inset:-15%;z-index:0;pointer-events:none;background:
+radial-gradient(circle at 20% 30%,rgba(0,90,255,.16),transparent 32%),
+radial-gradient(circle at 80% 20%,rgba(255,120,0,.18),transparent 28%),
+radial-gradient(circle at 55% 70%,rgba(125,255,220,.08),transparent 35%);
+filter:blur(22px);animation:nebulaPulse 14s ease-in-out infinite}
+@keyframes spaceDrift{from{transform:translateY(0)}to{transform:translateY(-80px)}}
+@keyframes nebulaPulse{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+
+.stellar-transfer{position:relative;z-index:3;display:flex;align-items:center;gap:24px;margin:0 0 34px;max-width:820px}
+.source-star{width:118px;height:118px;border-radius:50%;background:radial-gradient(circle,#fff8d7 0%,#ffd45d 18%,#ff8a00 48%,#ff3b00 66%,transparent 78%);box-shadow:0 0 45px #ffb347,0 0 95px #ff6a00,0 0 180px #ff3300;animation:starBreath 5s ease-in-out infinite}
+.dynamic-beam{position:relative;flex:1;height:14px;border-radius:999px;background:linear-gradient(90deg,#ff9d00,#ffd166,#61dafb,#8affc1);box-shadow:0 0 22px #ff9d00,0 0 45px #61dafb;overflow:hidden}
+.dynamic-beam span{position:absolute;top:-18px;width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,#fff,transparent 65%);opacity:.6;animation:beamFlow 2.4s linear infinite}
+.dynamic-beam span:nth-child(2){animation-delay:.7s}
+.dynamic-beam span:nth-child(3){animation-delay:1.4s}
+.charged-gsc{font-size:46px;font-weight:900;letter-spacing:-2px;color:#d8fbff;text-shadow:0 0 20px #61dafb,0 0 45px #ff9d00;border:1px solid rgba(97,218,251,.35);border-radius:28px;padding:18px 28px;background:rgba(4,16,25,.72);box-shadow:0 0 45px rgba(97,218,251,.25),inset 0 0 35px rgba(255,255,255,.05);animation:gscCharge 4s ease-in-out infinite}
+@keyframes starBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes beamFlow{from{left:-60px}to{left:100%}}
+@keyframes gscCharge{0%,100%{transform:scale(1);filter:brightness(1)}50%{transform:scale(1.03);filter:brightness(1.25)}}
+
+.hero,section,footer{position:relative;z-index:2}
+
 </head>
 <body>
+<div class="space-bg"></div>
+<div class="nebula-bg"></div>
 
 <section class="hero">
+<div class="stellar-transfer">
+  <div class="source-star"></div>
+  <div class="dynamic-beam">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="charged-gsc">GSC-X</div>
+</div>
+
 <div class="tag">GDS Foundation · Generative Stability Control</div>
 <h1>GSC-X</h1>
 <div class="headline">From stellar stability to nonlinear executive control.</div>
