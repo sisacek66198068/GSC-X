@@ -26,6 +26,15 @@ section{padding:90px 8%;border-bottom:1px solid #171717}
 .metric{font-size:58px;color:#ffb347;font-weight:bold}
 .flow span{display:inline-block;padding:12px 20px;border-radius:999px;border:1px solid #ffffff22;margin:6px}
 footer{padding:60px 8%;color:#aaa;background:#05070d;line-height:1.9}
+
+.cosmic-transfer{position:relative;z-index:2;margin:38px 0 10px;display:flex;align-items:center;gap:26px;max-width:760px}
+.mini-star{width:95px;height:95px;border-radius:50%;background:radial-gradient(circle,#fff6c8 0%,#ffbf42 22%,#ff6a00 58%,transparent 72%);box-shadow:0 0 35px #ff8a00,0 0 85px #ff4d00;animation:stellarPulse 5s ease-in-out infinite}
+.energy-stream{height:5px;flex:1;border-radius:999px;background:linear-gradient(90deg,#ff9d00,#61dafb,#8affc1);box-shadow:0 0 25px #61dafb;position:relative;overflow:hidden}
+.energy-stream:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,#fff,transparent);animation:flow 2.2s linear infinite}
+.gsc-core{min-width:190px;border:1px solid #61dafb55;border-radius:24px;padding:18px 22px;background:#06131acc;box-shadow:0 0 35px #61dafb33;text-align:center}
+.gsc-core div{font-size:28px;font-weight:bold;color:#baf7ff}
+.gsc-core small{color:#9adce8}
+@keyframes flow{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
 </style>
 </head>
 <body>
@@ -36,6 +45,16 @@ footer{padding:60px 8%;color:#aaa;background:#05070d;line-height:1.9}
 <div class="headline">From stellar stability to nonlinear executive control.</div>
 
 <p>Inspired by the long-term nonlinear stability of stellar fusion environments, the GDS framework explores whether naturally emerging cosmic stability principles can be translated into engineered executive-control architectures.</p>
+
+
+<div class="cosmic-transfer">
+  <div class="mini-star"></div>
+  <div class="energy-stream"></div>
+  <div class="gsc-core">
+    <div>GSC-X</div>
+    <small>Nonlinear Executive Stabilization</small>
+  </div>
+</div>
 
 <div class="glass">
 <div class="quote">“We did not invent stability. We discovered it in the dynamics of the stars.”</div>
