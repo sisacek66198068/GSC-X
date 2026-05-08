@@ -6,15 +6,67 @@
 <title>GSC-X | GDS Foundation</title>
 <style>
 body{margin:0;background:#02040a;color:white;font-family:Arial,Helvetica,sans-serif}
-.hero{min-height:100vh;padding:80px 8%;background:linear-gradient(135deg,#02040a,#071225,#12080a)}
-h1{font-size:86px;margin:20px 0;color:#fff}
-h2{font-size:36px;color:#ffb347}
+.hero{
+min-height:100vh;
+padding:80px 8%;
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+overflow:hidden;
+
+background:
+linear-gradient(90deg, rgba(2,4,10,.72), rgba(2,4,10,.42)),
+linear-gradient(180deg, rgba(2,4,10,.22), rgba(2,4,10,.82)),
+url("hero.jpg");
+
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+}
+h1{
+font-size:96px;
+margin:20px 0;
+color:#fff;
+letter-spacing:-4px;
+text-shadow:
+0 0 15px rgba(255,180,0,.18),
+0 0 40px rgba(255,120,0,.14)
+}
+h2{
+font-size:34px;
+color:#ffd089;
+font-weight:500;
+text-shadow:0 0 18px rgba(255,190,120,.15)
+}
 p{font-size:18px;line-height:1.7;color:#d6d6d6;max-width:850px}
 .tag{display:inline-block;padding:10px 18px;border:1px solid #ff990055;border-radius:999px;color:#ffbb66;background:#ff880014}
-.card{margin-top:30px;background:#0b0d14;border:1px solid #ff9d0033;border-radius:28px;padding:30px;max-width:900px;box-shadow:0 0 50px #ff880020}
+.card{
+margin-top:34px;
+background:rgba(8,10,16,.72);
+border:1px solid rgba(255,170,0,.16);
+border-radius:30px;
+padding:34px;
+max-width:920px;
+
+backdrop-filter:blur(12px);
+
+box-shadow:
+0 0 45px rgba(255,136,0,.08),
+inset 0 0 25px rgba(255,255,255,.03)
+}
 .btn{display:inline-block;margin:20px 12px 0 0;padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:bold}
-.primary{background:#ff8a00;color:#000}
-.secondary{border:1px solid #ffffff33;color:white}
+.primary{
+background:#ff9500;
+color:#000;
+box-shadow:0 0 25px rgba(255,149,0,.28)
+}
+.secondary{
+border:1px solid rgba(255,255,255,.22);
+color:white;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px)
+}
 section{padding:70px 8%;border-bottom:1px solid #222}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
 .metric{font-size:46px;color:#ffb347;font-weight:bold}
