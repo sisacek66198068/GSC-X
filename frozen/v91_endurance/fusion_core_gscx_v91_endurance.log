@@ -1,0 +1,10 @@
+Running 900 fusion-core simulations on 8 workers...
+controller  survival_rate  mean_peak_A  mean_min_temp  mean_max_density  mean_unsafe_time  mean_control_energy  mean_fusion_yield  mean_yield_per_energy
+   GSCX_V7            1.0     0.031504       0.956374          1.139358           0.00000             0.789324         173.363072             219.688953
+  GSCX_V91            1.0     0.027359       0.977510          1.133175           0.00000             0.511752         180.723048             353.303294
+       PID            0.0     1.550672       0.791816          1.126718           4.33259             5.559640           3.225315               0.586483
+
+SAVED:
+  fusion_core_gscx_v91_endurance_endurance_results.csv
+  fusion_core_gscx_v91_endurance_endurance_summary.csv
+  fusion_core_gscx_v91_endurance_*.png
