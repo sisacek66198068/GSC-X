@@ -37,3 +37,10 @@ venv_clean/
 .env/
 __pycache__/
 *.pyc
+
+# Python virtual environments
+venv/
+venv_clean/
+.env/
+__pycache__/
+*.pyc
