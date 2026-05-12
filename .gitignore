@@ -30,3 +30,10 @@ patch_*.py
 repair_*.py
 remove_duplicate_*.py
 GDS-framework/
+
+# Python virtual environments
+venv/
+venv_clean/
+.env/
+__pycache__/
+*.pyc
