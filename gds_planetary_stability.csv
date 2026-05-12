@@ -1,0 +1,6 @@
+body,mass_kg,age_Gyr,interpretation,mass_vs_earth,age_vs_earth,log10_mass_vs_earth
+Earth,5.97e+24,4.54,reference stable system,1.0,1.0,0.0
+Mars,6.42e+23,4.6,disrupted core / weak field survivor,0.10753768844221105,1.0132158590308369,-0.9684393030605158
+Venus,4.87e+24,4.5,blocked thermal system,0.8157453936348408,0.9911894273127754,-0.0884453699147348
+Mercury,3.3e+23,4.5,exposed core remnant,0.05527638190954774,0.9911894273127754,-1.2574603912514817
+Jupiter,1.898e+27,4.6,hyper-massive gas giant stabilizer,317.92294807370183,1.0132158590308369,2.5023218769619047
