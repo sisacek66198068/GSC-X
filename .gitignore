@@ -1,0 +1,32 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+*.tar.gz
+*.zip
+*_BACKUP*.py
+*_BEFORE*.py
+*_BROKEN*.py
+*_BAD*.py
+*_FINAL_STABLE_*.py
+.DS_Store
+.env
+*.key
+*.pem
+
+# local development junk
+_local_dev_junk/
+video_build/
+*_broken_backup.py
+patch_*.py
+repair_*.py
+remove_duplicate_*.py
+
+# local development junk
+_local_dev_junk/
+video_build/
+*_broken_backup.py
+patch_*.py
+repair_*.py
+remove_duplicate_*.py
+GDS-framework/
