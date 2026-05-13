@@ -72,6 +72,48 @@ section{padding:70px 8%;border-bottom:1px solid #222}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
 .metric{font-size:18px;line-height:1.5;color:#eeeeee;font-weight:normal}.metric strong{display:block;font-size:46px;color:#ffb347;font-weight:bold;margin-bottom:10px}
 footer{padding:45px 8%;color:#aaa;background:#05070d;line-height:1.8}
+
+
+.metrics-panel{
+display:flex;
+gap:0;
+margin-top:40px;
+background:rgba(0,0,0,0.58);
+border:1px solid rgba(255,179,71,0.35);
+border-radius:18px;
+overflow:hidden;
+max-width:1500px;
+}
+
+.metric-box{
+flex:1;
+padding:34px;
+border-right:1px solid rgba(255,255,255,0.12);
+}
+
+.metric-box:last-child{
+border-right:none;
+}
+
+.metric-number{
+font-size:64px;
+font-weight:bold;
+color:#ffb347;
+margin-bottom:12px;
+}
+
+.metric-title{
+font-size:20px;
+color:white;
+margin-bottom:14px;
+}
+
+.metric-text{
+font-size:16px;
+line-height:1.6;
+color:#eeeeee;
+}
+
 </style>
 </head>
 
@@ -114,25 +156,7 @@ PV 2026-216 • PV 2026-236 • PV 2026-241 • PV 2026-242
 <a class="btn" href="https://osf.io/" target="_blank">OSF</a>
 </div>
 
-<div class="metrics">
-<div class="metric">
-<strong>100%</strong>
-SURVIVAL RATE<br>
-Full survival during endurance fusion-core validation benchmarks.
-</div>
 
-<div class="metric">
-<strong>0</strong>
-UNSAFE TIME<br>
-No unsafe operational intervals detected during validation runs.
-</div>
-
-<div class="metric">
-<strong>353+</strong>
-YIELD / ENERGY<br>
-High nonlinear productivity efficiency under delayed-feedback conditions.
-</div>
-</div>
 
 <div class="card">
 <h2>Symbiotic Executive Architecture</h2>
