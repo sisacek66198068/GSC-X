@@ -44,3 +44,6 @@ venv_clean/
 .env/
 __pycache__/
 *.pyc
+venv_čisté/
+majetku/
+KNÉMOVÉ/
