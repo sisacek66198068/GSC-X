@@ -47,12 +47,14 @@ Supported anomaly modes:
 ---
 
 ## Demo Dashboard
+
 ![GSC-X Runtime Demo](gscx_runtime_demo.png)
 
 Main file:
 
-```python
 gscx_live_demo_dashboard.py
+
+---
 
 ## Runtime Examples
 
