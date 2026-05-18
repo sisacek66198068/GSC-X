@@ -53,3 +53,20 @@ Main file:
 
 ```python
 gscx_live_demo_dashboard.py
+
+## Runtime Examples
+
+### Runtime Recovery
+![Recovery](gscx_runtime_recovery.png)
+
+### CRITICAL Runtime Escalation
+![Critical](gscx_runtime_critical.png)
+
+### WARNING Runtime Escalation
+![Warning](gscx_runtime_warning.png)
+
+### Predictive Runtime Trigger
+![Prediction](gscx_runtime_prediction.png)
+
+### Runtime Mitigation Layer
+![Mitigation](gscx_runtime_mitigation.png)
