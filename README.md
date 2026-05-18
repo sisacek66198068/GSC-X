@@ -1,19 +1,54 @@
+# GSC-X NVIDIA Runtime Stability Demo
 
-## GSC-X v9.1 Endurance Benchmark
+Predictive runtime intelligence for nonlinear autonomous systems.
 
-A 900-run fusion-core endurance benchmark was completed for GSC-X v9.1 against GSC-X v7 and PID.
+---
 
-| Controller | Survival Rate | Mean Peak A | Unsafe Time | Control Energy | Fusion Yield | Yield / Energy |
-|---|---:|---:|---:|---:|---:|---:|
-| GSC-X v9.1 | 1.000 | 0.02736 | 0.00000 | 0.51175 | 180.723 | 353.303 |
-| GSC-X v7 | 1.000 | 0.03150 | 0.00000 | 0.78932 | 173.363 | 219.689 |
-| PID | 0.000 | 1.55067 | 4.33259 | 5.55964 | 3.225 | 0.586 |
+## Overview
 
-### Key Result
+GSC-X is a nonlinear predictive stability intelligence architecture designed for runtime anomaly detection, instability prediction, and mitigation activation before unsafe system divergence.
 
-GSC-X v9.1 achieved 100% survival, zero unsafe operational time, lower control energy than v7, higher fusion yield than v7, and approximately 600× higher productivity per unit energy than PID.
+This repository now includes an interactive NVIDIA-ready runtime dashboard demonstrating:
 
-Benchmark artifacts are stored in:
+- predictive instability detection,
+- WARNING / CRITICAL escalation,
+- runtime mitigation activation,
+- recovery dynamics,
+- nonlinear runtime monitoring.
 
-`frozen/v91_endurance/`
+---
 
+## Runtime Intelligence Features
+
+### Predictive Escalation
+GSC-X continuously evaluates nonlinear runtime risk growth and predicts instability trends before catastrophic divergence occurs.
+
+### Runtime Mitigation
+When enabled, GSC-X activates a mitigation layer that attempts stabilization before unsafe collapse.
+
+### Interactive Runtime Fault Injection
+
+Supported anomaly modes:
+
+- none
+- delay_response
+- burst_noise
+- sensor_drift
+- oscillation
+
+---
+
+## Runtime States
+
+- NORMAL
+- WARNING
+- CRITICAL
+
+---
+
+## Demo Dashboard
+
+Main file:
+
+```python
+gscx_live_demo_dashboard.py
