@@ -35,3 +35,17 @@ This is consistent with the GSC-X principle:
 
 **SCAN → DECIDE → STABILIZE → RECOVER → ADAPT**
 
+
+---
+
+# V4 Fast Validation Confirmation
+
+## Independent Confirmation Run
+
+```text
+Mean Cycles   ≈ 46.878
+Median Cycles ≈ 29.5
+P99 Cycles    ≈ 199.07
+Sticking Rate ≈ 0.434
+Decay Rate    ≈ 0.544
+md
