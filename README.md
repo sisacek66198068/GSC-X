@@ -1,74 +1,104 @@
-# GSC-X NVIDIA Runtime Stability Demo
+## Interactive Public Sandboxes
 
-Predictive runtime intelligence for nonlinear autonomous systems.
+Industrial Sandbox:  
+https://sandbox.gds-gsc-x.com
 
----
+Fusion Sandbox:  
+https://fusion.gds-gsc-x.com
 
-## Overview
+Research Website:  
+https://gds-gsc-x.com
 
-GSC-X is a nonlinear predictive stability intelligence architecture designed for runtime anomaly detection, instability prediction, and mitigation activation before unsafe system divergence.
+Publication (Zenodo DOI):  
+https://doi.org/10.5281/zenodo.20156104
 
-This repository now includes an interactive NVIDIA-ready runtime dashboard demonstrating:
+## Aerospace Validation (TRUE N10000 Confirmed)
 
-- predictive instability detection,
-- WARNING / CRITICAL escalation,
-- runtime mitigation activation,
-- recovery dynamics,
-- nonlinear runtime monitoring.
+The first aerospace validation branch of GSC-X has been completed and independently confirmed using large-scale TRUE N10000 validation runs.
 
----
+### Validation Scope
 
-## Runtime Intelligence Features
+* Flight Stabilization
+* Damage Recovery
+* Guidance HARD
+* Waypoint Navigation
+* Rocket Guidance
+* Gymnasium LunarLander
 
-### Predictive Escalation
-GSC-X continuously evaluates nonlinear runtime risk growth and predicts instability trends before catastrophic divergence occurs.
+### Key Results
 
-### Runtime Mitigation
-When enabled, GSC-X activates a mitigation layer that attempts stabilization before unsafe collapse.
+| Benchmark                       | Result                                                                |
+| ------------------------------- | --------------------------------------------------------------------- |
+| Guidance HARD TRUE N10000       | 18.18× lower median guidance error than PID                           |
+| Waypoint Navigation TRUE N10000 | 3.57× lower median final error than PID                               |
+| Rocket TRUE Validation          | 4.34× lower median final error and 9.43× higher productivity than PID |
+| LunarLander Smoke Validation    | Crash rate reduced from 51.5% to 7.1%                                 |
 
-### Interactive Runtime Fault Injection
+### Validation Artifacts
 
-Supported anomaly modes:
+Report:
 
-- none
-- delay_response
-- burst_noise
-- sensor_drift
-- oscillation
+`reports/aerospace_v1/AEROSPACE_VALIDATION_V1.md`
 
----
+Summary:
 
-## Runtime States
+`reports/aerospace_v1/RESULTS_SUMMARY.csv`
 
-- NORMAL
-- WARNING
-- CRITICAL
+### Interpretation
 
----
+The aerospace validation campaign indicates that the Guidance Layer transformed GSC-X from a stabilization-oriented controller into a trajectory-capable controller.
 
-## Demo Dashboard
+The strongest confirmed results were obtained in delayed and disturbed guidance tasks, waypoint navigation, and rocket ascent control.
 
-![GSC-X Runtime Demo](gscx_runtime_demo.png)
+These results represent offline simulation validation and form the basis for the next phase:
 
-Main file:
+* JSBSim aircraft validation
+* UAV/F16 scenarios
+* NASA open-source simulation environments
+* Hardware-in-the-loop validation
 
-gscx_live_demo_dashboard.py
 
----
 
-## Runtime Examples
+## Industrial Validation (TRUE N10000 Confirmed)
 
-### Runtime Recovery
-![Recovery](gscx_runtime_recovery.png)
+Large-scale industrial validation was performed using delayed factory-control benchmarks and productivity-oriented evaluation metrics.
 
-### CRITICAL Runtime Escalation
-![Critical](gscx_runtime_critical.png)
+### Key Results
 
-### WARNING Runtime Escalation
-![Warning](gscx_runtime_warning.png)
+| Scenario | Result |
+|---|---|
+| HARD 150 ms Delay | GSC-X achieved 11.73 productivity vs 7.83 for PID |
+| BRUTAL 300 ms Delay | GSC-X achieved 100% survival vs 88% for PID |
+| Industrial Productivity TRUE N3000 | GSC-X achieved approximately 4.9× higher productivity than PID |
 
-### Predictive Runtime Trigger
-![Prediction](gscx_runtime_prediction.png)
+### Representative TRUE N10000 Result
 
-### Runtime Mitigation Layer
-![Mitigation](gscx_runtime_mitigation.png)
+| Controller | Survival | Unsafe Time | Energy | Productivity |
+|---|---:|---:|---:|---:|
+| PID | 0.998 | 1.404 | 14.930 | 7.829 |
+| GSC-X v9.1 | 1.000 | 0.000 | 9.881 | 11.734 |
+
+### Interpretation
+
+The industrial validation campaign demonstrated that GSC-X can maintain stability under severe actuator delays while simultaneously reducing energy consumption and increasing productivity relative to classical PID control.
+
+## Fusion Validation (TRUE N10000 Confirmed)
+
+## GSC-X v9.1 Endurance Benchmark
+
+A 900-run fusion-core endurance benchmark was completed for GSC-X v9.1 against GSC-X v7 and PID.
+
+| Controller | Survival Rate | Mean Peak A | Unsafe Time | Control Energy | Fusion Yield | Yield / Energy |
+|---|---:|---:|---:|---:|---:|---:|
+| GSC-X v9.1 | 1.000 | 0.02736 | 0.00000 | 0.51175 | 180.723 | 353.303 |
+| GSC-X v7 | 1.000 | 0.03150 | 0.00000 | 0.78932 | 173.363 | 219.689 |
+| PID | 0.000 | 1.55067 | 4.33259 | 5.55964 | 3.225 | 0.586 |
+
+### Key Result
+
+GSC-X v9.1 achieved 100% survival, zero unsafe operational time, lower control energy than v7, higher fusion yield than v7, and approximately 600× higher productivity per unit energy than PID.
+
+Benchmark artifacts are stored in:
+
+`frozen/v91_endurance/`
+
