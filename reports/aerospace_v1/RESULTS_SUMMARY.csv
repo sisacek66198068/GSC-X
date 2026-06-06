@@ -1,0 +1,11 @@
+Benchmark,PID,GSCX,Improvement
+Flight_Stabilization_Productivity,0.110469,0.909729,8.24x
+Flight_Damage_Productivity,0.086243,0.522859,6.06x
+Guidance_v3_2_HARD_TRUE_Error,10.985522,0.604116,18.18x
+Guidance_v3_2_HARD_TRUE_Productivity,0.004048,0.034735,8.58x
+Waypoint_TRUE_Error,5.141463,1.438437,3.57x
+Waypoint_TRUE_Productivity,0.010709,0.031372,2.93x
+Rocket_TRUE_Error,80.224327,18.481211,4.34x
+Rocket_TRUE_Energy,10.911000,4.266105,2.56x
+Rocket_TRUE_Productivity,0.001034,0.009747,9.43x
+LunarLander_CrashRate,51.5,7.1,7.25x
