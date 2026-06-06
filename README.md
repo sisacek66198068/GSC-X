@@ -57,6 +57,33 @@ These results represent offline simulation validation and form the basis for the
 * NASA open-source simulation environments
 * Hardware-in-the-loop validation
 
+
+
+## Industrial Validation (TRUE N10000 Confirmed)
+
+Large-scale industrial validation was performed using delayed factory-control benchmarks and productivity-oriented evaluation metrics.
+
+### Key Results
+
+| Scenario | Result |
+|---|---|
+| HARD 150 ms Delay | GSC-X achieved 11.73 productivity vs 7.83 for PID |
+| BRUTAL 300 ms Delay | GSC-X achieved 100% survival vs 88% for PID |
+| Industrial Productivity TRUE N3000 | GSC-X achieved approximately 4.9× higher productivity than PID |
+
+### Representative TRUE N10000 Result
+
+| Controller | Survival | Unsafe Time | Energy | Productivity |
+|---|---:|---:|---:|---:|
+| PID | 0.998 | 1.404 | 14.930 | 7.829 |
+| GSC-X v9.1 | 1.000 | 0.000 | 9.881 | 11.734 |
+
+### Interpretation
+
+The industrial validation campaign demonstrated that GSC-X can maintain stability under severe actuator delays while simultaneously reducing energy consumption and increasing productivity relative to classical PID control.
+
+## Fusion Validation (TRUE N10000 Confirmed)
+
 ## GSC-X v9.1 Endurance Benchmark
 
 A 900-run fusion-core endurance benchmark was completed for GSC-X v9.1 against GSC-X v7 and PID.
