@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSC-X Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #030b14;
@@ -17,46 +18,61 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Rajdhani', sans-serif; /* Aktivace nového fontu */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-image: radial-gradient(circle at 50% 0%, #061a2b 0%, #030b14 70%);
         }
 
         /* Navigace */
         header {
             background-color: #02080f;
-            border-bottom: 2px solid var(--cyan-glow);
-            padding: 10px 20px;
+            border-bottom: 1px solid rgba(10, 143, 153, 0.5);
+            padding: 10px 25px;
             display: flex;
             align-items: center;
-            box-shadow: 0 0 15px rgba(10, 143, 153, 0.3);
+            box-shadow: 0 0 20px rgba(10, 143, 153, 0.2);
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 22px;
+            font-weight: 700;
             color: var(--text-main);
-            margin-right: 40px;
-            letter-spacing: 2px;
+            margin-right: auto; /* Odtlačí zbytek menu doprava */
+            letter-spacing: 1px;
         }
 
         .logo span {
-            color: var(--cyan-glow);
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         nav a {
             color: var(--text-main);
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 14px;
+            font-size: 16px;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: color 0.3s;
+            transition: color 0.3s, text-shadow 0.3s;
         }
 
         nav a:hover {
-            color: var(--gold-accent);
+            color: var(--cyan-glow);
+            text-shadow: 0 0 8px rgba(10, 143, 153, 0.6);
+        }
+
+        /* Ikona hledání */
+        .search-icon {
+            font-size: 18px;
+            cursor: pointer;
         }
 
         /* Hlavní Grid */
@@ -64,28 +80,29 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            padding: 20px;
+            padding: 30px;
             max-width: 1600px;
             margin: 0 auto;
         }
 
         /* Jednotlivé panely */
         .panel {
-            background-color: var(--panel-bg);
-            border: 1px solid var(--cyan-glow);
-            border-radius: 8px;
+            background-color: rgba(7, 23, 36, 0.8);
+            border: 1px solid rgba(10, 143, 153, 0.4);
+            border-radius: 6px;
             padding: 15px;
-            box-shadow: inset 0 0 20px rgba(10, 143, 153, 0.1), 0 4px 6px rgba(0,0,0,0.5);
+            box-shadow: inset 0 0 15px rgba(10, 143, 153, 0.05), 0 5px 15px rgba(0,0,0,0.6);
             display: flex;
             flex-direction: column;
         }
 
         .panel-header {
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: 600;
             color: var(--gold-accent);
             text-transform: uppercase;
             border-bottom: 1px solid rgba(10, 143, 153, 0.3);
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             margin-bottom: 15px;
             text-align: center;
             letter-spacing: 1px;
@@ -94,21 +111,24 @@
         /* Placeholder pro budoucí obrázky/grafy */
         .image-placeholder {
             flex-grow: 1;
-            background-color: rgba(10, 143, 153, 0.05);
-            border: 1px dashed var(--cyan-glow);
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(10, 143, 153, 0.2);
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 200px;
+            min-height: 220px;
             margin-bottom: 15px;
-            color: var(--text-muted);
-            font-size: 12px;
+            color: rgba(138, 180, 248, 0.5);
+            font-size: 14px;
+            font-weight: 500;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .panel-footer {
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: 500;
             color: var(--text-main);
             display: flex;
             justify-content: space-between;
@@ -116,11 +136,12 @@
         }
 
         .status-badge {
-            background-color: rgba(10, 143, 153, 0.2);
+            background-color: rgba(10, 143, 153, 0.15);
             border: 1px solid var(--cyan-glow);
-            padding: 3px 8px;
+            padding: 2px 10px;
             border-radius: 4px;
             color: var(--cyan-glow);
+            font-weight: 600;
         }
 
     </style>
@@ -128,7 +149,7 @@
 <body>
 
     <header>
-        <div class="logo">GSC-X <span>COMMAND CENTER</span></div>
+        <div class="logo">GSC-X <span>Command Center</span></div>
         <nav>
             <a href="#">Přehled</a>
             <a href="#">O nás</a>
@@ -136,6 +157,10 @@
             <a href="#">Publikace ▼</a>
             <a href="#">Validace ▼</a>
             <a href="#">Reporty ▼</a>
+            <a href="#">Úložiště ▼</a>
+            <a href="#">Autor</a>
+            <a href="#">Kontakt</a>
+            <a href="#" class="search-icon">🔍</a>
         </nav>
     </header>
 
