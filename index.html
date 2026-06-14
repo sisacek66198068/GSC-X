@@ -1,224 +1,220 @@
-<!DOCTYPE html>
-<html lang="cs">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSC-X Command Center</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #030b14;
-            --panel-bg: #071724;
-            --cyan-glow: #0a8f99;
-            --gold-accent: #f5c542;
-            --text-main: #e0f7fa;
-            --text-muted: #8ab4f8;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X | GDS Foundation</title>
+<style>
+body{
+    margin:0;
+    color:#f5f5f5;
+    font-family:Arial,sans-serif;
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Rajdhani', sans-serif; /* Aktivace nového fontu */
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-image: radial-gradient(circle at 50% 0%, #061a2b 0%, #030b14 70%);
-        }
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)),
+        url("https://raw.githubusercontent.com/sisacek66198068/GSC-X/main/web.png");
 
-        /* Navigace */
-        header {
-            background-color: #02080f;
-            border-bottom: 1px solid rgba(10, 143, 153, 0.5);
-            padding: 10px 25px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 0 20px rgba(10, 143, 153, 0.2);
-        }
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-        .logo {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--text-main);
-            margin-right: auto; /* Odtlačí zbytek menu doprava */
-            letter-spacing: 1px;
-        }
 
-        .logo span {
-            color: var(--text-muted);
-            font-weight: 500;
-        }
 
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
 
-        nav a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s, text-shadow 0.3s;
-        }
 
-        nav a:hover {
-            color: var(--cyan-glow);
-            text-shadow: 0 0 8px rgba(10, 143, 153, 0.6);
-        }
+h1{
+font-size:96px;
+margin:20px 0;
+color:#fff;
+letter-spacing:-4px;
+text-shadow:
+0 0 15px rgba(255,180,0,.18),
+0 0 40px rgba(255,120,0,.14)
+}
+h2{
+font-size:34px;
+color:#ffd089;
+font-weight:500;
+text-shadow:0 0 18px rgba(255,190,120,.15)
+}
+p{font-size:18px;line-height:1.7;color:#d6d6d6;max-width:850px}
+.tag{display:inline-block;padding:10px 18px;border:1px solid #ff990055;border-radius:999px;color:#ffbb66;background:#ff880014}
+.card{
+margin-top:34px;
+background:rgba(8,10,16,.72);
+border:1px solid rgba(255,170,0,.16);
+border-radius:30px;
+padding:34px;
+max-width:920px;
 
-        /* Ikona hledání */
-        .search-icon {
-            font-size: 18px;
-            cursor: pointer;
-        }
+backdrop-filter:blur(12px);
 
-        /* Hlavní Grid */
-        .dashboard {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 30px;
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        /* Jednotlivé panely */
-        .panel {
-            background-color: rgba(7, 23, 36, 0.8);
-            border: 1px solid rgba(10, 143, 153, 0.4);
-            border-radius: 6px;
-            padding: 15px;
-            box-shadow: inset 0 0 15px rgba(10, 143, 153, 0.05), 0 5px 15px rgba(0,0,0,0.6);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .panel-header {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--gold-accent);
-            text-transform: uppercase;
-            border-bottom: 1px solid rgba(10, 143, 153, 0.3);
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            text-align: center;
-            letter-spacing: 1px;
-        }
-
-        /* Placeholder pro budoucí obrázky/grafy */
-        .image-placeholder {
-            flex-grow: 1;
-            background-color: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(10, 143, 153, 0.2);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 220px;
-            margin-bottom: 15px;
-            color: rgba(138, 180, 248, 0.5);
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .panel-footer {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-main);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .status-badge {
-            background-color: rgba(10, 143, 153, 0.15);
-            border: 1px solid var(--cyan-glow);
-            padding: 2px 10px;
-            border-radius: 4px;
-            color: var(--cyan-glow);
-            font-weight: 600;
-        }
-
-    </style>
+box-shadow:
+0 0 45px rgba(255,136,0,.08),
+inset 0 0 25px rgba(255,255,255,.03)
+}
+.btn{display:inline-block;margin:20px 12px 0 0;padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:bold}
+.primary{
+background:#ff9500;
+color:#000;
+box-shadow:0 0 25px rgba(255,149,0,.28)
+}
+.secondary{
+border:1px solid rgba(255,255,255,.22);
+color:white;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px)
+}
+section{padding:70px 8%;border-bottom:1px solid #222}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.metric{font-size:46px;color:#ffb347;font-weight:bold}
+footer{padding:45px 8%;color:#aaa;background:#05070d;line-height:1.8}
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">GSC-X <span>Command Center</span></div>
-        <nav>
-            <a href="#">Přehled</a>
-            <a href="#">O nás</a>
-            <a href="#">Sandboxy ▼</a>
-            <a href="#">Publikace ▼</a>
-            <a href="#">Validace ▼</a>
-            <a href="#">Reporty ▼</a>
-            <a href="#">Úložiště ▼</a>
-            <a href="#">Autor</a>
-            <a href="#">Kontakt</a>
-            <a href="#" class="search-icon">🔍</a>
-        </nav>
-    </header>
+<section class="hero">
+<div class="tag">GDS Foundation · Generative Stability Control
+<p style="margin-top:28px; line-height:1.8;">
+<strong style="color:#ffb347;">Patent Applications Filed</strong><br>
+GSC-F • GSC-S • GSC-C • GSC-X<br>
+<span style="color:#cccccc;">
+Czech Industrial Property Office
+</span><br>
+PV 2026-216 • PV 2026-236 • PV 2026-241 • PV 2026-242
+</p>
 
-    <div class="dashboard">
-        <div class="panel">
-            <div class="panel-header">Fúzní Stabilizace (Plasma-Field)</div>
-            <div class="image-placeholder">[Zde vložíme obrázek reaktoru]</div>
-            <div class="panel-footer">
-                <span>Metastabilní detekce: 0.05ms odezva</span>
-                <span class="status-badge">Live link</span>
-            </div>
-        </div>
+</div>
 
-        <div class="panel">
-            <div class="panel-header">Robotická Integrita (Droid100)</div>
-            <div class="image-placeholder">[Zde vložíme grafy a robotickou paži]</div>
-            <div class="panel-footer">
-                <span>3000 episodes, zero unstable steps</span>
-                <span class="status-badge">Live link</span>
-            </div>
-        </div>
+<h1>GSC-X</h1>
+<h2>From stellar stability to nonlinear executive control.</h2>
 
-        <div class="panel">
-            <div class="panel-header">Materiálová Predikce (Self-Organizing Nodes)</div>
-            <div class="image-placeholder">[Zde vložíme strukturu uzlů]</div>
-            <div class="panel-footer">
-                <span>Predikce selhání: 80 cyklů předem</span>
-                <span class="status-badge">Live link</span>
-            </div>
-        </div>
+<p>
+GSC-X is a nonlinear predictive stabilization architecture for highly unstable dynamic systems.
+It is built on the GDS foundation — a gravitational-dynamic stability framework inspired by nonlinear cosmic and stellar dynamics.
+</p>
 
-        <div class="panel">
-            <div class="panel-header">NASA / 709 Motorů Validace</div>
-            <div class="image-placeholder">[Zde vložíme testovací baterie]</div>
-            <div class="panel-footer">
-                <span>Validováno na 709 jednotkách NASA</span>
-                <span class="status-badge">Live link</span>
-            </div>
-        </div>
+<div class="card">
+<h2>GDS Foundation</h2>
+<p>
+GDS (Gravitational Dynamic System) is a nonlinear gravitational-dynamic framework.
+High-precision numerical conservation tests reached approximately 10⁻¹⁵ relative precision.
+</p>
+<p>
+GSC-X translates this stability principle into a symbiotic executive architecture:
+predictive scanning, adaptive decision logic, nonlinear stabilization, recovery, and adaptation.
+</p>
+</div>
 
-        <div class="panel">
-            <div class="panel-header">Metodika (CM / ELI Framework)</div>
-            <div class="image-placeholder">[Zde vložíme vývojový diagram]</div>
-            <div class="panel-footer">
-                <span>Fyzikální detekce namísto statistického odhadu</span>
-                <span class="status-badge">Technický Dossier</span>
-            </div>
-        </div>
+<a class="btn primary" href="https://github.com/sisacek66198068/GSC-X">Explore Repository</a>
+<a class="btn secondary" href="mailto:stepanumartin@gds-gsc-x.com">Contact</a>
+<br><br>
 
-        <div class="panel">
-            <div class="panel-header">Real-Time Performance (Národní Síť)</div>
-            <div class="image-placeholder">[Zde vložíme mapu/město]</div>
-            <div class="panel-footer">
-                <span>Odezva v jednotkách mikrosekund</span>
-                <span class="status-badge">Live link</span>
-            </div>
-        </div>
-    </div>
+OSF: <a href="https://osf.io/4fgyh/" target="_blank" style="color:#7fd0ff;">Open Science Framework</a>
+</section>
+
+<section>
+<h2>Live GSC-X Sandbox Ecosystem</h2>
+<p>
+Public cloud demonstrators validating GSC-X as a nonlinear executive stability architecture
+across industrial control, fusion, robotics, nuclear, spaceflight and reliability environments.
+</p>
+
+<div class="grid">
+<div class="card">
+<h2>Industrial Sandbox</h2>
+<p>PID vs GSC-X productivity, stability and runtime-control demonstration.</p>
+<a class="btn primary" href="https://sandbox.gds-gsc-x.com" target="_blank">Open Industrial</a>
+</div>
+
+<div class="card">
+<h2>Fusion Sandbox</h2>
+<p>Nonlinear plasma-like stabilization and TRUE/N3000 validation environment.</p>
+<a class="btn primary" href="https://fusion.gds-gsc-x.com" target="_blank">Open Fusion</a>
+</div>
+
+<div class="card">
+<h2>Robotics Sandbox</h2>
+<p>Executive runtime mitigation for actuator stress, thermal load and delayed control.</p>
+<a class="btn primary" href="https://robotics.gds-gsc-x.com" target="_blank">Open Robotics</a>
+</div>
+
+<div class="card">
+<h2>Nuclear Sandbox</h2>
+<p>Thermal escalation suppression and HARD TRUE/N10000 nuclear-like runtime validation.</p>
+<a class="btn primary" href="https://nuclear.gds-gsc-x.com" target="_blank">Open Nuclear</a>
+</div>
+
+<div class="card">
+<h2>Spaceflight Sandbox</h2>
+<p>Rocket guidance, waypoint navigation, lunar operations and autonomous mission control validation.</p>
+<a class="btn primary" href="https://spaceflight.gds-gsc-x.com" target="_blank">Open Spaceflight</a>
+</div>
+
+<div class="card">
+<h2>Reliability Sandbox</h2>
+<p>NASA CMAPSS, IMS Bearings, CWRU and predictive maintenance validation framework.</p>
+<a class="btn primary" href="https://reliability.gds-gsc-x.com" target="_blank">Open Reliability</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Fusion Endurance Benchmarks</h2>
+<div class="grid">
+<div class="card"><div>SURVIVAL RATE</div><div class="metric">100%</div><p>Full survival during endurance fusion-core validation benchmarks.</p></div>
+<div class="card"><div>UNSAFE TIME</div><div class="metric">0</div><p>No unsafe operational intervals detected during validation runs.</p></div>
+<div class="card"><div>YIELD / ENERGY</div><div class="metric">353+</div><p>High nonlinear productivity efficiency under delayed-feedback conditions.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Symbiotic Executive Architecture</h2>
+<p>SCAN → DECIDE → STABILIZE → RECOVER → ADAPT</p>
+</section>
+
+<footer>
+<strong>Martin Štěpánů</strong><br>
+Independent Researcher | Czech Republic<br>
+ORCID: 0009-0007-0409-6037<br>
+Founder of the GDS (Gravitational Dynamic System) Framework<br>
+Architect of GSC-X Nonlinear Executive Stabilization Systems<br>
+Email: stepanumartin@gds-gsc-x.com
+<br><br>
+OSF: <a href="https://osf.io/" target="_blank" style="color:#7fd0ff;">Open Science Framework</a>
+</footer>
 
 </body>
 </html>
+
+<section style="padding:60px 8%;background:rgba(0,0,0,0.72);margin-top:40px;">
+<h2 style="font-size:42px;color:#7fd0ff;">Research & Author</h2>
+
+<p style="font-size:20px;line-height:1.8;color:#f0f0f0;">
+<strong>Martin Štěpánů</strong><br>
+Independent Researcher | Czech Republic<br>
+ORCID: 0009-0007-0409-6037<br><br>
+
+Founder of the GDS (Gravitational Dynamic System) Framework<br>
+Architect of GSC-X Nonlinear Executive Stabilization Systems<br><br>
+
+Email:
+<a href="mailto:stepanumartin@gds-gsc-x.com" style="color:#7fd0ff;">
+<br><br>
+OSF: <a href="https://osf.io/" target="_blank" style="color:#7fd0ff;">Open Science Framework</a>
+stepanumartin@gds-gsc-x.com
+<br><br>
+OSF: <a href="https://osf.io/" target="_blank" style="color:#7fd0ff;">Open Science Framework</a>
+</a>
+</p>
+
+<p style="font-size:20px;">
+OSF:
+<a href="https://osf.io/" target="_blank" style="color:#7fd0ff;">
+Open Science Framework
+</a>
+</p>
+</section>
+
