@@ -1,0 +1,50 @@
+=== NUCLEAR TRANSMUTATION DIGITAL TWIN V2 N3000 ===
+           mode  runs  mean_toxicity_reduction  median_toxicity_reduction  mean_remaining_fraction  mean_converted_mass_proxy  mean_energy  mean_yield_per_energy  mean_unsafe_time  mean_interventions     score
+            ADS 10000                 0.365570                   0.365627                 0.634430                   1.829621   181.947249               0.010062            0.0005            260.0000  4.298019
+GSCX_MSR_HYBRID 10000                 0.235892                   0.235941                 0.764108                   1.183809    60.554386               0.019563            0.0000             24.3665  4.194069
+    GSCX_CM_ELI 10000                 0.259580                   0.259957                 0.740420                   1.303045    78.697921               0.016586            0.0000             54.4826  4.096994
+            MSR 10000                 0.241601                   0.241658                 0.758399                   1.211746    68.943482               0.017587            0.0000              0.0000  4.036860
+           BASE 10000                 0.231046                   0.231267                 0.768954                   1.159050    72.531580               0.015994            0.0000              0.0000  3.764812
+           FAST 10000                 0.396214                   0.396321                 0.603786                   1.983859   329.096469               0.006035          116.5879            260.0000 -1.921971
+
+=== DELTA vs BASE ===
+
+[ADS]
+toxicity_reduction_delta : +0.134524
+remaining_fraction_delta : -0.134524
+converted_mass_delta     : +0.670570
+energy_delta             : +109.415669
+yield_per_energy_delta   : -0.005932
+unsafe_time_delta        : +0.000500
+
+[GSCX_MSR_HYBRID]
+toxicity_reduction_delta : +0.004845
+remaining_fraction_delta : -0.004845
+converted_mass_delta     : +0.024758
+energy_delta             : -11.977194
+yield_per_energy_delta   : +0.003568
+unsafe_time_delta        : +0.000000
+
+[GSCX_CM_ELI]
+toxicity_reduction_delta : +0.028533
+remaining_fraction_delta : -0.028533
+converted_mass_delta     : +0.143995
+energy_delta             : +6.166341
+yield_per_energy_delta   : +0.000592
+unsafe_time_delta        : +0.000000
+
+[MSR]
+toxicity_reduction_delta : +0.010555
+remaining_fraction_delta : -0.010555
+converted_mass_delta     : +0.052695
+energy_delta             : -3.588097
+yield_per_energy_delta   : +0.001593
+unsafe_time_delta        : +0.000000
+
+[FAST]
+toxicity_reduction_delta : +0.165168
+remaining_fraction_delta : -0.165168
+converted_mass_delta     : +0.824809
+energy_delta             : +256.564889
+yield_per_energy_delta   : -0.009959
+unsafe_time_delta        : +116.587900

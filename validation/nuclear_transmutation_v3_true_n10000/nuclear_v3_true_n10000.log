@@ -1,0 +1,68 @@
+=== NUCLEAR TRANSMUTATION DIGITAL TWIN V3 N3000 ===
+           mode  runs  mean_toxicity_reduction  median_toxicity_reduction  mean_remaining_fraction  mean_converted_mass_proxy  mean_energy  mean_yield_per_energy  mean_unsafe_time  mean_interventions     score
+    FAST_HYBRID 10000                 0.341591                   0.341647                 0.658409                   1.710142   116.923946               0.014634            0.0000             40.1309  4.645447
+     ADS_HYBRID 10000                 0.323956                   0.323979                 0.676044                   1.622754   113.962008               0.014246            0.0000             53.8262  4.436237
+            ADS 10000                 0.365451                   0.365469                 0.634549                   1.829293   181.770621               0.010070            0.0003            260.0000  4.297970
+GSCX_MSR_HYBRID 10000                 0.236769                   0.236836                 0.763231                   1.187961    60.817936               0.019547            0.0000             28.9763  4.200716
+    GSCX_CM_ELI 10000                 0.259757                   0.259966                 0.740243                   1.303119    78.788218               0.016568            0.0000             54.4181  4.096830
+            MSR 10000                 0.241591                   0.241848                 0.758409                   1.212487    68.950704               0.017596            0.0000              0.0000  4.037650
+           BASE 10000                 0.231141                   0.231094                 0.768859                   1.160099    72.578423               0.015999            0.0000              0.0000  3.766153
+           FAST 10000                 0.396142                   0.396272                 0.603858                   1.982585   329.130705               0.006030          116.6644            260.0000 -1.927023
+
+=== DELTA vs BASE ===
+
+[FAST_HYBRID]
+toxicity_reduction_delta : +0.110450
+remaining_fraction_delta : -0.110450
+converted_mass_delta     : +0.550043
+energy_delta             : +44.345524
+yield_per_energy_delta   : -0.001365
+unsafe_time_delta        : +0.000000
+
+[ADS_HYBRID]
+toxicity_reduction_delta : +0.092815
+remaining_fraction_delta : -0.092815
+converted_mass_delta     : +0.462655
+energy_delta             : +41.383586
+yield_per_energy_delta   : -0.001753
+unsafe_time_delta        : +0.000000
+
+[ADS]
+toxicity_reduction_delta : +0.134310
+remaining_fraction_delta : -0.134310
+converted_mass_delta     : +0.669195
+energy_delta             : +109.192199
+yield_per_energy_delta   : -0.005929
+unsafe_time_delta        : +0.000300
+
+[GSCX_MSR_HYBRID]
+toxicity_reduction_delta : +0.005627
+remaining_fraction_delta : -0.005627
+converted_mass_delta     : +0.027863
+energy_delta             : -11.760487
+yield_per_energy_delta   : +0.003548
+unsafe_time_delta        : +0.000000
+
+[GSCX_CM_ELI]
+toxicity_reduction_delta : +0.028616
+remaining_fraction_delta : -0.028616
+converted_mass_delta     : +0.143020
+energy_delta             : +6.209795
+yield_per_energy_delta   : +0.000569
+unsafe_time_delta        : +0.000000
+
+[MSR]
+toxicity_reduction_delta : +0.010450
+remaining_fraction_delta : -0.010450
+converted_mass_delta     : +0.052389
+energy_delta             : -3.627719
+yield_per_energy_delta   : +0.001597
+unsafe_time_delta        : +0.000000
+
+[FAST]
+toxicity_reduction_delta : +0.165001
+remaining_fraction_delta : -0.165001
+converted_mass_delta     : +0.822486
+energy_delta             : +256.552282
+yield_per_energy_delta   : -0.009969
+unsafe_time_delta        : +116.664400

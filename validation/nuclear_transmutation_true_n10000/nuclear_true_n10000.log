@@ -1,0 +1,12 @@
+=== NUCLEAR TRANSMUTATION DIGITAL TWIN V1 ===
+       mode  runs  mean_toxicity_reduction  median_toxicity_reduction  mean_remaining_fraction  mean_converted_mass_proxy  mean_energy  mean_yield_per_energy  mean_unsafe_time  mean_interventions
+       BASE 10000                 0.223560                   0.223521                 0.776440                   0.957117    65.498465               0.014613               0.0              0.0000
+GSCX_CM_ELI 10000                 0.226727                   0.226733                 0.773273                   0.971171    66.354658               0.014637               0.0             34.8977
+
+=== DELTA GSC-X vs BASE ===
+toxicity_reduction_delta : +0.003168
+remaining_fraction_delta : -0.003168
+converted_mass_delta     : +0.014054
+energy_delta             : +0.856193
+yield_per_energy_delta   : +0.000024
+unsafe_time_delta        : +0.000000
