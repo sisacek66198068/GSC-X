@@ -44,3 +44,10 @@ venv_clean/
 .env/
 __pycache__/
 *.pyc
+
+# Local/private runtime environments - never publish
+venv/
+venv_clean/
+.venv/
+__pycache__/
+*.pyc
