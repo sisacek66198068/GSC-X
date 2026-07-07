@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Services</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="services-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html" class="active">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">AUDITS · PILOTS · LICENSING · COLLABORATION</div>
+  <h1>SERVICES</h1>
+  <p>Business Collaboration and Applied GSC-X Services</p>
+</section>
+<section class="about-content">
+
+<h2>What We Offer</h2>
+
+<p>GSC-X is more than a research and validation platform.</p>
+
+<p>We work with industrial organizations, research institutions, technology companies, and public-sector partners to evaluate, validate, and apply advanced predictive stabilization technologies in real operational environments.</p>
+
+<p>We welcome discussions regarding system audits, pilot projects, validation studies, research collaboration, consulting, and licensing opportunities.</p>
+
+<h2>Pilot Projects</h2>
+
+<p>Collaborative pilot projects designed to evaluate GSC-X within real operational environments and quantify measurable benefits.</p>
+
+<ul>
+<li>Improved operational stability</li>
+<li>Earlier risk detection</li>
+<li>Reduced downtime</li>
+<li>Enhanced reliability</li>
+<li>Increased productivity</li>
+<li>Improved situational awareness</li>
+<li>Predictive warning capabilities</li>
+</ul>
+
+<h2>System Stability Audit</h2>
+
+<p>Independent assessment of operational stability, reliability risks, dynamic bottlenecks, and emerging instability patterns.</p>
+
+<ul>
+<li>Technical assessment</li>
+<li>Stability evaluation</li>
+<li>Reliability analysis</li>
+<li>Dynamic risk assessment</li>
+<li>Operational recommendations</li>
+<li>Validation report</li>
+</ul>
+
+<h2>Technology Evaluation</h2>
+
+<p>Independent evaluation of whether GSC-X can provide measurable value within a specific process, infrastructure, facility, or operational environment.</p>
+
+<ul>
+<li>Stability improvement</li>
+<li>Reliability enhancement</li>
+<li>Failure prevention</li>
+<li>Predictive diagnostics</li>
+<li>Operational resilience</li>
+<li>Performance optimization</li>
+</ul>
+
+<h2>Licensing & Commercial Applications</h2>
+
+<p>Organizations interested in applying GSC technologies may explore licensing and commercial collaboration opportunities.</p>
+
+<ul>
+<li>GSC-F — PV 2026-216</li>
+<li>GSC-S — PV 2026-236</li>
+<li>GSC-C — PV 2026-241</li>
+<li>GSC-X — PV 2026-242</li>
+</ul>
+
+<p><strong>Status: Patent Pending</strong></p>
+
+<h2>Research & Innovation Partnerships</h2>
+
+<p>Collaboration opportunities with universities, research institutes, laboratories, innovation centers, industrial R&D teams, and public institutions.</p>
+
+<h2>Technical Consulting</h2>
+
+<ul>
+<li>Stability analysis</li>
+<li>Reliability assessment</li>
+<li>Failure prediction</li>
+<li>Predictive maintenance</li>
+<li>Dynamic risk evaluation</li>
+<li>Executive stabilization architectures</li>
+<li>Adaptive control systems</li>
+</ul>
+
+<h2>Typical Engagement Path</h2>
+
+<p>
+Initial Discussion<br>
+↓<br>
+System Stability Audit<br>
+↓<br>
+Pilot Project<br>
+↓<br>
+Validation Report<br>
+↓<br>
+Licensing / Deployment
+</p>
+
+<h2>Commercial Terms</h2>
+
+<p>Commercial terms are discussed individually based on project scope, technical complexity, duration, validation requirements, deployment scale, and collaboration model.</p>
+
+<p><strong>Pricing: By Agreement</strong></p>
+
+<h2>Contact</h2>
+
+<p>Interested in evaluating GSC-X within your organization?</p>
+
+<p>We welcome discussions regarding audits, pilot projects, validation studies, licensing opportunities, research collaboration, and technical consulting.</p>
+
+<p><strong>Email:</strong> stepanumartin@gds-gsc-x.com</p>
+
+<p><strong>Phone:</strong> +420 737 315 405</p>
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+</body>
+</html>
