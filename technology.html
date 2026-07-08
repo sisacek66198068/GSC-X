@@ -30,7 +30,10 @@
 <body class="technology-page">
 
 <header class="topbar">
-  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
   <nav class="nav">
     <a href="index.html">OVERVIEW</a>
     <a href="about.html">ABOUT</a>
@@ -47,96 +50,126 @@
   </nav>
 </header>
 
+
+
 <main>
-<section class="hero" id="overview">
-  <div class="eyebrow">GSC-X TECHNOLOGY</div>
-  <h1>TECHNOLOGY</h1>
-  <p>Core Executive Architecture</p>
-</section>
-<section class="about-content">
+  <section class="hero">
+    <div class="eyebrow">TECHNOLOGY</div>
+    <h1>EXECUTIVE KERNEL ARCHITECTURE</h1>
+    <p>Predictive nonlinear executive stabilization architecture for complex dynamic systems.</p>
+  </section>
 
-  <h2>Technology Overview</h2>
+  <section class="about-content">
 
-  <p>GSC-X is a platform-independent predictive executive stabilization architecture designed to operate above existing systems as a real-time stabilization, warning, and decision-support layer.</p>
+    <h2>Technology Overview</h2>
+    <p>
+      GSC-X is a platform-independent predictive executive stabilization architecture designed to operate above existing systems as an additional layer for monitoring, early warning, decision support and adaptive stabilization.
+    </p>
+    <p>
+      Its purpose is not to replace existing control systems, monitoring platforms or infrastructure. GSC-X acts as an executive layer that observes system dynamics, evaluates emerging instability, estimates resilience and supports stabilization before critical transitions fully develop.
+    </p>
 
-  <p>Its purpose is not to replace existing controllers, monitoring systems, or infrastructure. GSC-X acts as an additional executive layer that observes system dynamics, evaluates emerging risk, and supports adaptive stabilization before instability becomes critical.</p>
+    <h2>Executive Kernel</h2>
+    <p>
+      The current architecture is organized as Executive Kernel: a unified processing pipeline from telemetry ingestion to executive-state evaluation, transition analysis, decision support and validation feedback.
+    </p>
 
-  <h2>Executive Architecture</h2>
+    <h3>1. Telemetry Layer</h3>
+    <p>
+      GSC-X can process telemetry from simulations, digital twins, replay datasets, CSV streams, sensors, industrial systems, reliability datasets, robotics environments, cloud infrastructure and domain-specific runtime outputs.
+    </p>
 
-  <h3>1. Telemetry Intake Layer</h3>
-  <p>GSC-X can process incoming telemetry from simulations, digital twins, CSV streams, sensors, industrial systems, reliability datasets, robotics environments, and domain-specific runtime outputs.</p>
+    <h3>2. Dynamic State Evaluation</h3>
+    <p>
+      The architecture continuously evaluates system condition, accumulated instability, operating stress, recovery reserve and dynamic deviation from safe, productive or resilient regimes.
+    </p>
 
-  <h3>2. State Evaluation Layer</h3>
-  <p>The architecture continuously evaluates system state, instability growth, operational stress, recovery margin, and dynamic deviation from safe or productive regimes.</p>
+    <h3>3. Core Internal Indices</h3>
+    <p>
+      Executive Kernel extends the original CM and ELI logic into a broader state-evaluation layer:
+    </p>
+    <ul>
+      <li><strong>CM — Context Memory:</strong> tracks recent dynamic history and recovery context.</li>
+      <li><strong>ELI — Early Limit Indicator:</strong> estimates proximity to future operating boundaries.</li>
+      <li><strong>PTM — Predictive Transition Memory:</strong> captures transition patterns before instability becomes critical.</li>
+      <li><strong>MR — Metastability Reserve:</strong> estimates remaining recovery and stability capacity.</li>
+      <li><strong>MRI — Metastability Risk Index:</strong> summarizes risk of transition toward fragile or critical regimes.</li>
+    </ul>
 
-  <h3>3. Predictive Executive Layer</h3>
-  <p>The executive layer identifies early instability patterns and generates stabilization recommendations or control signals before classical failure thresholds are reached.</p>
+    <h3>4. Executive State Engine</h3>
+    <p>
+      GSC-X does not evaluate only isolated alarms. It maps system behavior into executive operating states such as:
+    </p>
+    <pre>HIGH_RESERVE → STABLE → FRAGILE → LOW_RESERVE → CRITICAL → RECOVERY</pre>
 
-  <h2>Core Internal Technologies</h2>
+    <h3>5. Executive Transition Layer</h3>
+    <p>
+      The architecture monitors transitions between states, including degradation, recovery, stabilization and reorganization. This allows GSC-X to distinguish harmless fluctuation from structurally relevant instability.
+    </p>
 
-  <h3>CM — Context Memory</h3>
-  <p>Context Memory stores recent dynamic history and recovery context, allowing the system to evaluate whether instability is isolated, persistent, worsening, or entering a metastable corridor.</p>
+    <h3>6. Executive Decision Layer</h3>
+    <p>
+      The decision layer can support warning generation, mitigation, routing, operating-mode selection, recovery support and stabilization recommendations depending on domain and validation context.
+    </p>
 
-  <h3>ELI — Early Limit Indicator</h3>
-  <p>Early Limit Indicator detects approach toward operational boundaries before conventional alarms or hard safety limits are triggered.</p>
+    <h2>Universal Metastability Kernel Framework</h2>
+    <p>
+      Executive Kernel is built around an evolving Universal Metastability Kernel Framework currently undergoing successful cross-domain validation across independent engineering and scientific environments.
+    </p>
+    <p>
+      The kernel provides a unified dynamic framework for executive-state evaluation, transition analysis, resilience estimation and adaptive stabilization. Current validation spans reliability, industrial control, fusion-inspired systems, robotics, spaceflight, battery systems, nuclear engineering, energy networks, cardiac dynamics and internet infrastructure.
+    </p>
+    <p>
+      The kernel should currently be understood as a research and validation architecture. A dedicated publication will provide the final formal presentation, reproducibility package and scientific framing.
+    </p>
 
-  <h3>Metastability-Aware Evaluation</h3>
-  <p>GSC-X evaluates whether a system is merely fluctuating, degrading, recovering, or reorganizing around a metastable regime. This allows the architecture to distinguish harmless variation from structurally relevant instability.</p>
+    <h2>Integration Model</h2>
+    <p>
+      GSC-X is designed as an interface-agnostic layer. It can operate with offline datasets, simulations, digital twins, industrial telemetry, robotics pipelines, reliability-monitoring data, internet infrastructure replays and future real-time control interfaces.
+    </p>
+    <ul>
+      <li>CSV and structured telemetry</li>
+      <li>REST and custom APIs</li>
+      <li>OPC-UA / industrial gateway concepts</li>
+      <li>ROS and robotics pipelines</li>
+      <li>Digital-twin environments</li>
+      <li>Replay validation and what-if simulation</li>
+      <li>Cloud, on-premise and edge runtime environments</li>
+    </ul>
 
-  <h2>Predictive Stabilization Loop</h2>
+    <h2>Validation Workflow</h2>
+    <pre>Telemetry
+  ↓
+Dynamic State Evaluation
+  ↓
+Executive State Engine
+  ↓
+Transition Analysis
+  ↓
+Executive Decision
+  ↓
+Digital Twin / Replay Validation
+  ↓
+TRUE Benchmark
+  ↓
+Cross-Domain Validation
+  ↓
+Publication
+  ↓
+Pilot Deployment</pre>
 
-  <p>The basic operating cycle is:</p>
+    <h2>Technology Status</h2>
+    <p>
+      GSC-X Executive Kernel is currently implemented as a research and validation architecture with public sandbox environments, benchmark outputs, validation reports, publications and patent-pending architecture components.
+    </p>
+    <p>
+      The current focus is cross-domain validation, reproducibility, technical reporting, Universal Metastability Kernel Framework formalization and preparation for pilot evaluation with industrial, scientific, infrastructure and research partners.
+    </p>
 
-  <ul>
-    <li>Observe telemetry and system state</li>
-    <li>Extract dynamic stress and instability indicators</li>
-    <li>Update Context Memory</li>
-    <li>Evaluate Early Limit Indicator</li>
-    <li>Detect risk corridor or recovery opportunity</li>
-    <li>Generate executive stabilization response</li>
-    <li>Validate response through benchmark feedback</li>
-  </ul>
-
-  <h2>Integration Model</h2>
-
-  <p>GSC-X is designed as an interface-agnostic layer. It can operate with offline datasets, simulations, digital twins, industrial telemetry, robotics pipelines, reliability monitoring data, and future real-time control interfaces.</p>
-
-  <ul>
-    <li>CSV and structured telemetry</li>
-    <li>REST and custom APIs</li>
-    <li>OPC-UA / industrial gateway concepts</li>
-    <li>ROS and robotics pipelines</li>
-    <li>Digital twin environments</li>
-    <li>Cloud, local, and edge runtime environments</li>
-  </ul>
-
-  <p><strong>No vendor lock-in.</strong> The architecture is intended to support multiple domains without forcing replacement of existing infrastructure.</p>
-
-  <h2>Validation Pipeline</h2>
-
-  <p>Technology development follows a validation-first workflow:</p>
-
-  <ul>
-    <li>Offline validation on real or benchmark datasets</li>
-    <li>Simulation validation under controlled scenarios</li>
-    <li>Stress testing through TRUE / endurance benchmarks</li>
-    <li>Cross-domain comparison against baseline behavior</li>
-    <li>Publication-ready reporting and reproducibility artifacts</li>
-    <li>Hardware-in-the-loop and deployment pathways</li>
-  </ul>
-
-  <h2>Technology Status</h2>
-
-  <p>GSC-X is currently implemented as a research and validation architecture with multiple public sandbox environments, benchmark outputs, validation reports, publications, and filed patent applications.</p>
-
-  <p>The current focus is cross-domain validation, reproducibility, technical reporting, and preparation for pilot evaluation with industrial, reliability, robotics, energy, and scientific partners.</p>
-
-</section>
-
-
-
-
+  </section>
 </main>
+
+
 
 
 

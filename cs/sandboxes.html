@@ -81,28 +81,6 @@ position:relative;
 overflow:hidden;
 }
 
-.robotics-bg::after{
-content:"";
-position:absolute;
-left:58%;
-top:62%;
-width:26px;
-height:26px;
-border-radius:50%;
-background:radial-gradient(circle, rgba(255,255,255,.95) 0%, rgba(0,220,255,.85) 22%, rgba(0,220,255,.25) 48%, rgba(0,220,255,0) 72%);
-box-shadow:0 0 18px rgba(0,220,255,.9),0 0 42px rgba(0,220,255,.45);
-opacity:0;
-pointer-events:none;
-animation:weldingFlash 2s infinite;
-}
-
-@keyframes weldingFlash{
-0%,72%,100%{opacity:0;transform:scale(.4);}
-76%{opacity:1;transform:scale(1.15);}
-80%{opacity:.25;transform:scale(.75);}
-84%{opacity:.9;transform:scale(1);}
-88%{opacity:0;transform:scale(.45);}
-}
 
 </style>
 
@@ -110,7 +88,10 @@ animation:weldingFlash 2s infinite;
 <body>
 
 <header class="topbar">
-  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
   <nav class="nav">
     <a href="index.html">PŘEHLED</a>
     <a href="about.html">O PROJEKTU</a>
@@ -131,7 +112,7 @@ animation:weldingFlash 2s infinite;
 <section class="hero" id="sandboxes">
   <div class="eyebrow">SANDBOXOVÝ EKOSYSTÉM GSC-X</div>
   <h1>SANDBOXY</h1>
-  <p>Doménově orientovaná validační a demonstrační prostředí postavená kolem architektury GSC-X Symbiont.</p>
+  <p>Doménově orientovaná validační a demonstrační prostředí postavená kolem architektury GSC-X Executive Kernel.</p>
 </section>
 
 <section class="sandbox-grid">
@@ -187,7 +168,7 @@ animation:weldingFlash 2s infinite;
 
   <div class="sandbox-card energy-bg" onclick="window.open('https://energy-network.gds-gsc-x.com', '_blank')" role="link">
     <h2>Energy Network Sandbox</h2>
-    <p>Výzkumný prototyp pro prediktivní stabilizaci, monitorování odolnosti a podporu exekutivního řízení v energetických sítích.</p>
+    <p>Exekutivní stabilizace, monitoring odolnosti a adaptivní podpora rozhodování pro moderní energetické sítě.</p>
     <span class="status active">VALIDOVÁNO</span>
     
   </div>
@@ -202,6 +183,14 @@ animation:weldingFlash 2s infinite;
 
 
 
+
+  <div class="sandbox-card internet-bg" onclick="window.open('https://internet.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Internet Infrastructure Sandbox</h2>
+    <p>Prediktivní stabilizace a exekutivní monitoring internetové infrastruktury, cloudových platforem, datacenter a digitálních komunikačních ekosystémů.</p>
+    <span class="status active">VALIDOVÁNO</span>
+  </div>
+
+
 <div class="sandbox-card future-card">
 
 <div class="future-dots">
@@ -212,7 +201,7 @@ animation:weldingFlash 2s infinite;
 
 <h2>Již brzy</h2>
 
-<p>Další GSC-X Sandbox je ve vývoji.</p>
+<p>Ekosystém GSC-X se dále rozšiřuje o nové validační domény a výzkumná prostředí.</p>
 
 </div>
 
