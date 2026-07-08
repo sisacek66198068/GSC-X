@@ -1,6 +1,13 @@
 body{margin:0;background:#02080f;color:#e8fbff;font-family:Arial,sans-serif}
 .topbar{height:54px;display:flex;align-items:center;padding:0 24px;background:#01070b;border-bottom:1px solid rgba(84,216,255,.35)}
-.brand{font-family:Consolas,monospace;font-size:16px;margin-right:auto;color:#f5c542}
+.brand{
+  display:flex;
+  align-items:center;
+  margin-right:auto;
+  min-width:220px;
+  position:relative;
+  top:1px;
+}
 .brand span{font-family:Consolas,monospace;font-size:18px;color:white;font-weight:900;text-shadow:0 0 12px #54d8ff}
 .nav{display:flex;gap:18px;font-family:Consolas,monospace;font-weight:800;font-size:15px}
 .nav a,.nav span{color:white;text-decoration:none}
@@ -221,6 +228,13 @@ footer a{color:#00e7ff;border:1px solid rgba(84,216,255,.65);padding:7px 12px;bo
 
 .spaceflight-bg{
   background-image:url("assets/sandbox-bg/Spaceflight.png");
+}
+
+
+.internet-bg{
+  background-image:
+    linear-gradient(rgba(0,0,0,.42), rgba(0,0,0,.42)),
+    url("assets/sandbox-bg/Internet.png");
 }
 
 .nuclear-bg{
@@ -644,3 +658,191 @@ DISCUSS → AUDIT → PILOT → VALIDATE → DEPLOY";
   }
 }
 
+
+
+/* Validation Summary two-column grid */
+.validation-summary-grid{
+  display:grid;
+  grid-template-columns:minmax(220px, 260px) auto;
+  column-gap:28px;
+  row-gap:8px;
+  max-width:520px;
+  font-family:Consolas,monospace;
+  font-size:16px;
+  line-height:1.35;
+  margin:20px 0 24px 0;
+}
+.validation-summary-grid span:nth-child(even){
+  text-align:left;
+}
+
+/* NAV COLOR LOCK: only current active page is yellow */
+.nav a,
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:focus {
+  color: white;
+}
+
+.nav a.active,
+.nav a.active:link,
+.nav a.active:visited,
+.nav a.active:hover,
+.nav a.active:focus {
+  color: #f5c542;
+}
+
+/* GSC-X brand with emblem */
+.brand{
+  display:flex;
+  align-items:center;
+  margin-right:auto;
+  min-width:220px;
+  position:relative;
+  top:1px;
+}
+
+.brand-erb{
+  width:48px;
+  height:44px;
+  object-fit:contain;
+  flex:0 0 auto;
+  filter:drop-shadow(0 0 10px rgba(84,216,255,.35));
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:0px;
+}
+
+.brand-main{
+  font-family:Consolas,monospace;
+  font-size:24px;
+  font-weight:900;
+  color:#ffffff;
+  line-height:1;
+  letter-spacing:.5px;
+  text-shadow:0 0 14px rgba(84,216,255,.45);
+}
+
+.brand-sub{
+  font-family:Consolas,monospace;
+  font-size:13px;
+  font-weight:800;
+  color:#f5c542;
+  line-height:1;
+  letter-spacing:.2px;
+  margin-top:1px;
+  text-shadow:0 0 14px rgba(245,197,66,.55);
+  white-space:nowrap;
+}
+
+@media(max-width:760px){
+  .brand{
+  display:flex;
+  align-items:center;
+  margin-right:auto;
+  min-width:220px;
+  position:relative;
+  top:1px;
+}
+  .brand-erb{
+  width:48px;
+  height:44px;
+  object-fit:contain;
+  flex:0 0 auto;
+  filter:drop-shadow(0 0 10px rgba(84,216,255,.35));
+}
+  .brand-main{
+  font-family:Consolas,monospace;
+  font-size:24px;
+  font-weight:900;
+  color:#ffffff;
+  line-height:1;
+  letter-spacing:.5px;
+  text-shadow:0 0 14px rgba(84,216,255,.45);
+}
+  .brand-sub{
+  font-family:Consolas,monospace;
+  font-size:13px;
+  font-weight:800;
+  color:#f5c542;
+  line-height:1;
+  letter-spacing:.2px;
+  margin-top:1px;
+  text-shadow:0 0 14px rgba(245,197,66,.55);
+  white-space:nowrap;
+}
+}
+
+/* GSC-X complete web logo */
+.brand{
+  display:flex;
+  align-items:center;
+  margin-right:auto;
+  min-width:220px;
+  position:relative;
+  top:1px;
+}
+
+ .brand-logo-web{
+  height:44px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+  filter:none;
+}
+
+@media(max-width:760px){
+  .brand-logo-web{
+  height:44px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+  filter:none;
+}
+  .brand{
+  display:flex;
+  align-items:center;
+  margin-right:auto;
+  min-width:220px;
+  position:relative;
+  top:1px;
+}
+}
+
+.cards-video{
+    display:block;
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,.45);
+    background:#000;
+}
+
+.cards-video{
+    display:block;
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,.45);
+    background:#000;
+}
+
+.cards-video{
+  display:block;
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 40px rgba(0,0,0,.45);
+  background:#000;
+}
