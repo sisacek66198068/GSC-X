@@ -56,3 +56,7 @@ __pycache__/
 *.py
 *.ipynb
 *.sh
+_backup_before_*/
+_backup_cs_before_deploy_*/
+*.BACKUP_*
+*_BACKUP_*
