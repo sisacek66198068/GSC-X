@@ -51,9 +51,40 @@
     position:relative;
 }
 
+.cards-image-section::after{
+    content:"";
+    position:absolute;
+    left:44%;
+    top:18%;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    pointer-events:none;
+    background:radial-gradient(circle,
+        rgba(255,255,255,1) 0%,
+        rgba(0,235,255,.95) 20%,
+        rgba(0,220,255,.45) 52%,
+        rgba(0,220,255,0) 78%);
+    box-shadow:
+        0 0 18px rgba(0,230,255,.95),
+        0 0 44px rgba(0,220,255,.60),
+        0 0 80px rgba(0,220,255,.35);
+    opacity:.55;
+    animation:roboticsGlowBreath 6s infinite ease-in-out;
+}
 
-
-
+@keyframes roboticsGlowBreath{
+    0%,100%{
+        opacity:.35;
+        transform:scale(.75);
+        filter:brightness(.85);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1.25);
+        filter:brightness(1.45);
+    }
+}
 
 
 
@@ -122,7 +153,30 @@
 
 
 
+.cards-image-section::before{
+    content:"";
+    position:absolute;
+    left:69.5%;
+    top:54.5%;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    pointer-events:none;
 
+    background:radial-gradient(circle,
+        rgba(255,255,255,1) 0%,
+        rgba(0,235,255,.95) 22%,
+        rgba(0,180,255,.45) 55%,
+        rgba(0,180,255,0) 80%);
+
+    box-shadow:
+        0 0 12px rgba(0,230,255,.95),
+        0 0 30px rgba(0,220,255,.55),
+        0 0 60px rgba(0,220,255,.32);
+
+    opacity:0;
+    animation:energyFlowPulse 8s infinite ease-in-out;
+}
 
 @keyframes energyFlowPulse{
     0%,18%,100%{
@@ -163,10 +217,7 @@
 <body>
 
 <header class="topbar">
-  <div class="brand">
-    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
-  </div>
-  </div>
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
   <nav class="nav">
     <a href="index.html" class="active">PŘEHLED</a>
     <a href="about.html">O PROJEKTU</a>
@@ -187,7 +238,7 @@
 <section class="hero" id="overview">
   <div class="eyebrow">TERÉNNÍ INTELIGENCE · NELINEÁRNÍ STABILITA · EXEKUTIVNÍ ŘÍZENÍ</div>
   <h1><span class="gscx-title">GSC-X</span> <span class="cc-title">COMMAND CENTER</span></h1>
-  <p>GSC-X Executive Kernel je platformně nezávislá architektura prediktivní exekutivní stabilizace navržený pro monitorování, predikci a stabilizaci průmyslových systémů, systémů spolehlivosti, fúze, robotiky, baterií, kosmických systémů, jaderných systémů a budoucích energetických sítí v reálném čase.</p>
+  <p>GSC-X Symbiont je platformně nezávislý prediktivní algoritmus exekutivní stabilizace navržený pro monitorování, predikci a stabilizaci průmyslových systémů, systémů spolehlivosti, fúze, robotiky, baterií, kosmických systémů, jaderných systémů a budoucích energetických sítí v reálném čase.</p>
 </section>
 
 <section class="stats">
@@ -195,14 +246,14 @@
   <div><b>100%</b><span>Pokrytí baterií</span></div>
   <div><b>0</b><span>Falešných varování Zenodo</span></div>
   <div><b>4</b><span>Patent Pending</span></div>
-  <div><b>10</b><span>Živých sandboxů</span></div>
-  <div><b>12</b><span>Klíčových publikací</span></div>
+  <div><b>9</b><span>Živých sandboxů</span></div>
+  <div><b>11</b><span>Klíčových publikací</span></div>
 </section>
 
 </main>
 
 <section class="cards-image-section">
-  <img src="../assets/cards/command_center_cards_cs.png" alt="GSC-X validační Command Center – česká verze">
+  <img src="../assets/cards/command_center_cards_en.png" alt="Karty validačního Command Center GSC-X">
 </section>
 
 </body>
