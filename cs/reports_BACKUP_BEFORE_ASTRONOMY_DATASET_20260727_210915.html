@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Reports</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="sandboxes.html">SANDBOXY</a>
+    <a href="publications.html">PUBLIKACE</a>
+    <a href="validation.html">VALIDACE</a>
+    <a href="reports.html" class="active">REPORTY</a>
+    <a href="repository.html">REPOZITÁŘ</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../reports.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">REPORTY</div>
+  <h1>REPORTY</h1>
+  <p>Technické validační reporty</p>
+</section>
+
+<section class="about-content">
+
+<h2>Knihovna reportů</h2>
+
+<p>
+Knihovna reportů GSC-X obsahuje doménově specifické validační reporty dokumentující benchmarkové metodiky,
+datasety, validační kampaně, klíčové výkonové metriky a reprodukovatelné výzkumné výsledky napříč ekosystémem GSC-X.
+</p>
+
+<p>
+Každý report je spojen s dedikovaným sandboxem, validačním portfoliem a publikací propojenou s DOI.
+</p>
+
+<h2>Publikované validační reporty</h2>
+
+<div class="reports-grid">
+
+  <div class="report-card">
+    <h3>🔧 Reliability Validation Report V1</h3>
+    <p><strong>DOI publikace:</strong></p>
+    <p><a class="pub-link" href="https://doi.org/10.5281/zenodo.20789515" target="_blank">REPORT SPOLEHLIVOSTI →</a></p>
+    <ul>
+      <li>Validace NASA CMAPSS napříč 709 motory</li>
+      <li>100% detekční výkon</li>
+      <li>Medián Warning Quality Score (WQS): 0.8916</li>
+      <li>Validace ložisek IMS a CWRU</li>
+      <li>Validace CM a ELI</li>
+    </ul>
+  </div>
+
+  <div class="report-card">
+    <h3>🔋 Battery Validation Report V1</h3>
+    <p><strong>DOI publikace:</strong></p>
+    <p><a class="pub-link" href="https://doi.org/10.5281/zenodo.20788452" target="_blank">REPORT BATERIÍ →</a></p>
+    <ul>
+      <li>Validace datasetu NASA Battery</li>
+      <li>Validace Oxford Battery</li>
+      <li>Validace CALCE Battery</li>
+      <li>Prediktivní monitorování degradace</li>
+      <li>Mezidatasetové hodnocení zdraví baterií</li>
+    </ul>
+  </div>
+
+  <div class="report-card">
+    <h3>☢️ Nuclear Validation Report V1</h3>
+    <p><strong>DOI publikace:</strong></p>
+    <p><a class="pub-link" href="https://doi.org/10.5281/zenodo.20779138" target="_blank">JADERNÝ REPORT →</a></p>
+    <ul>
+      <li>Nuclear Operating Map</li>
+      <li>Validace ECO koridoru</li>
+      <li>Validace Safe Performance Corridor</li>
+      <li>FAST, ADS, MSR a hybridní archetypy</li>
+      <li>Validace Nuclear Digital Twin</li>
+    </ul>
+  </div>
+
+  <div class="report-card">
+    <h3>⚡ Energy Network Validation Report V1</h3>
+    <p><strong>DOI publikace:</strong></p>
+    <p><a class="pub-link" href="https://doi.org/10.5281/zenodo.20779099" target="_blank">REPORT ENERGETICKÉ SÍTĚ →</a></p>
+    <ul>
+      <li>Validace IEEE14 / IEEE39 / IEEE57 / IEEE118</li>
+      <li>Czech Outage Replay N10000</li>
+      <li>SciGrid-DE N10000</li>
+      <li>Validace Grid2Op</li>
+      <li>Potlačení blackoutu a mitigace kaskád</li>
+    </ul>
+  </div>
+
+  
+  <div class="report-card">
+    <h3>🌐 Internet Infrastructure Validation Report V1</h3>
+    <p><strong>DOI publikace:</strong></p>
+    <p><a class="pub-link" href="https://doi.org/10.5281/zenodo.21168980" target="_blank">INTERNET REPORT →</a></p>
+    <ul>
+      <li>Alibaba Public Infrastructure replay validace</li>
+      <li>Ověření Google Cluster replay pipeline</li>
+      <li>Executive Benchmark Standard certifikace</li>
+      <li>Digital Twin What-if validace</li>
+      <li>Monitoring odolnosti infrastruktury a cloudových služeb</li>
+    </ul>
+  </div>
+
+<div class="report-card">
+    <h3>❤️ Cardiac Validation Report V1</h3>
+    <p><strong>DOI publikace:</strong></p>
+    <p><a class="pub-link" href="https://doi.org/10.5281/zenodo.21082903" target="_blank">CARDIAC REPORT →</a></p>
+    <ul>
+      <li>Validace databáze MIT-BIH Arrhythmia Database</li>
+      <li>Phenotype-aware exekutivní routing</li>
+      <li>Architektura Virtual Pacemaker Guard</li>
+      <li>Integrace Universal Metastability Kernel</li>
+      <li>Validace srdečních exekutivních stavů</li>
+    </ul>
+  </div>
+
+  <div class="report-card report-card-prep">
+    <h3>🏭 Industrial Validation Report V1</h3>
+    <p><strong>Status:</strong> V přípravě</p>
+    <p><span class="prep-link">INDUSTRIAL REPORT — V PŘÍPRAVĚ</span></p>
+    <ul>
+      <li>Validace průmyslového řízení</li>
+      <li>Hard-delay factory benchmarky</li>
+      <li>Analýza produktivity a energetické účinnosti</li>
+    </ul>
+  </div>
+
+  <div class="report-card report-card-prep">
+    <h3>⚛️ Fusion Validation Report V1</h3>
+    <p><strong>Status:</strong> V přípravě</p>
+    <p><span class="prep-link">FUSION REPORT — V PŘÍPRAVĚ</span></p>
+    <ul>
+      <li>Runtime validace inspirovaná fúzí</li>
+      <li>Metastabilita a plazmatu podobná stresová dynamika</li>
+      <li>Benchmarkové důkazy TRUE N-series</li>
+    </ul>
+  </div>
+
+  <div class="report-card report-card-prep">
+    <h3>🤖 Robotics Validation Report V1</h3>
+    <p><strong>Status:</strong> V přípravě</p>
+    <p><span class="prep-link">ROBOTICS REPORT — V PŘÍPRAVĚ</span></p>
+    <ul>
+      <li>Robotics runtime mitigation</li>
+      <li>Ochrana aktuátorů a odezva na disturbance</li>
+      <li>Roadmap validace digitálního dvojčete</li>
+    </ul>
+  </div>
+
+  <div class="report-card report-card-prep">
+    <h3>🚀 Spaceflight Validation Report V1</h3>
+    <p><strong>Status:</strong> V přípravě</p>
+    <p><span class="prep-link">SPACEFLIGHT REPORT — V PŘÍPRAVĚ</span></p>
+    <ul>
+      <li>Validace raket a navádění</li>
+      <li>Důkazy waypoint navigace</li>
+      <li>Lunární a autonomní větev řízení mise</li>
+    </ul>
+  </div>
+
+</div>
+
+<h2>Roadmap knihovny reportů</h2>
+
+<h3>Publikováno</h3>
+<ul>
+<li>✓ Reliability Validation Report V1</li>
+<li>✓ Battery Validation Report V1</li>
+<li>✓ Nuclear Validation Report V1</li>
+<li>✓ Energy Network Validation Report V1</li>
+</ul>
+
+<h3>V přípravě</h3>
+<ul>
+<li>○ Industrial Validation Report V1</li>
+<li>○ Fusion Validation Report V1</li>
+<li>○ Robotics Validation Report V1</li>
+<li>○ Spaceflight Validation Report V1</li>
+<li>✓ Cardiac Validation Report V1</li>
+</ul>
+
+<h2>Validační filozofie</h2>
+
+<p>
+Všechny reporty GSC-X jsou založeny na reprodukovatelné benchmarkové validaci, dokumentovaných metodikách,
+veřejně dostupných datasetech tam, kde je to použitelné, a transparentních reportovacích postupech.
+</p>
+
+<p>
+Cílem nejsou teoretická tvrzení o výkonu, ale měřitelné důkazy získané prostřednictvím mezidoménových validačních kampaní,
+reprodukovatelných experimentů a publikování v režimu otevřené vědy.
+</p>
+
+<p>
+<a class="pub-link" href="https://github.com/sisacek66198068/GSC-X" target="_blank">REPOZITÁŘ GSC-X →</a>
+</p>
+
+</section>
+
+</main>
+
+</body>
+</html>

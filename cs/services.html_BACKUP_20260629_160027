@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Služby</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="services-page">
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="../sandboxes.html">SANDBOXY</a>
+    <a href="../publications.html">PUBLIKACE</a>
+    <a href="../validation.html">VALIDACE</a>
+    <a href="../reports.html">REPORTY</a>
+    <a href="../repository.html">REPOZITÁŘ</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../index.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">AUDITY · PILOTY · LICENCE · SPOLUPRÁCE</div>
+  <h1>SLUŽBY</h1>
+  <p><strong>Snižte prostoje. Zvyšte spolehlivost. Ověřte technologii před nasazením.</strong></p>
+  <p>Technické audity, pilotní projekty, validační služby a exekutivní AI pro systémy citlivé na stabilitu.</p>
+  <p><strong>Ověřeno napříč oblastmi: průmysl · spolehlivost · baterie · robotika · energetika · jaderné systémy · fúze · spaceflight.</strong></p>
+</section>
+
+<section class="about-content">
+
+<h2>Co nabízíme</h2>
+<p><strong>GSC-X pomáhá organizacím vyhodnotit, ověřit a nasadit prediktivní stabilizační technologie v provozně kritických prostředích.</strong></p>
+
+<p>Od úvodního technického posouzení po validační pilot nabízí GSC-X strukturovanou cestu, jak ověřit technologii před reálným nasazením.</p>
+
+<h2>Pilotní projekty</h2>
+<p>Společné pilotní projekty pro ověření GSC-X v konkrétním provozním prostředí a měření přínosů.</p>
+<ul>
+<li>vyšší provozní stabilita,</li>
+<li>dřívější detekce rizik,</li>
+<li>snížení prostojů,</li>
+<li>vyšší spolehlivost,</li>
+<li>prediktivní varování.</li>
+</ul>
+
+<h2>Technický audit stability systému</h2>
+<p>Nezávislé posouzení provozní stability, spolehlivostních rizik, dynamických omezení a vznikajících nestabilit.</p>
+
+<h2>Licencování a komerční aplikace</h2>
+<p>Organizace se zájmem o aplikaci GSC technologií mohou jednat o licencování, pilotním nasazení nebo dlouhodobé spolupráci.</p>
+<ul>
+<li>GSC-F — PV 2026-216</li>
+<li>GSC-S — PV 2026-236</li>
+<li>GSC-C — PV 2026-241</li>
+<li>GSC-X — PV 2026-242</li>
+</ul>
+<p><strong>Status: Patent Pending</strong></p>
+
+<h2>Typická cesta spolupráce</h2>
+<p>Úvodní diskuse<br>↓<br>Technický audit<br>↓<br>Pilotní projekt<br>↓<br>Validační report<br>↓<br>Licencování / nasazení</p>
+
+<h2>Kontakt</h2>
+<p><a class="pub-link" href="contact.html">ZAČÍT DISKUSI →</a></p>
+
+</section>
+</main>
+
+</body>
+</html>

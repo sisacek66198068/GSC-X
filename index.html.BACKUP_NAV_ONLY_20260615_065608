@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Command Center</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 42px auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> Command Center</div>
+  <nav class="nav">
+    <a href="#overview">PŘEHLED</a>
+    <a href="#about">O NÁS</a>
+
+    <div class="drop"><button>SANDBOXY ▼</button>
+      <div class="menu">
+        <a href="https://sandbox.gds-gsc-x.com">Industrial Sandbox</a>
+        <a href="https://fusion.gds-gsc-x.com">Fusion Sandbox</a>
+        <a href="https://battery.gds-gsc-x.com">Battery Sandbox</a>
+        <a href="https://robotics.gds-gsc-x.com">Robotics Sandbox</a>
+        <a href="https://reliability.gds-gsc-x.com">Reliability Sandbox</a>
+        <a href="https://spaceflight.gds-gsc-x.com">Spaceflight Sandbox</a>
+        <a href="https://nuclear.gds-gsc-x.com">Nuclear Sandbox</a>
+      </div>
+    </div>
+
+    <div class="drop"><button>PUBLIKACE ▼</button>
+      <div class="menu">
+        <a href="https://doi.org/10.5281/zenodo.20156104">GSC-X Publication</a>
+        <a href="https://doi.org/10.5281/zenodo.20037474">GDS Publication</a>
+        <a href="https://zenodo.org">Zenodo Profile</a>
+      </div>
+    </div>
+
+    <div class="drop"><button>VALIDACE ▼</button>
+      <div class="menu">
+        <a href="#reliability">NASA CMAPSS / 709 engines</a>
+        <a href="#battery">Battery Validation</a>
+        <a href="#robotics">Robotics DROID100</a>
+        <a href="#fusion">Fusion TRUE Benchmark</a>
+        <a href="#cards">Validation Grid</a>
+      </div>
+    </div>
+
+    <div class="drop"><button>REPORTY ▼</button>
+      <div class="menu">
+        <a href="https://github.com/sisacek66198068/GSC-X">GitHub Reports</a>
+        <a href="#cards">Validation Summaries</a>
+        <a href="#author">Research Identity</a>
+      </div>
+    </div>
+
+    <div class="drop"><button>ÚLOŽIŠTĚ ▼</button>
+      <div class="menu">
+        <a href="https://github.com/sisacek66198068/GSC-X">GSC-X Repository</a>
+        <a href="https://github.com/sisacek66198068">GDS Repository</a>
+      </div>
+    </div>
+
+    <a href="#author">AUTOR</a>
+    <a href="mailto:stepanumartin@gds-gsc-x.com">KONTAKT</a>
+    <span>🔍</span>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">FIELD INTELLIGENCE · NONLINEAR STABILITY · EXECUTIVE CONTROL</div>
+  <h1>GSC-X COMMAND CENTER</h1>
+  <p>Unified validation hub for adaptive nonlinear stabilization across fusion, robotics, batteries, reliability, spaceflight and industrial systems.</p>
+</section>
+
+<section class="stats">
+  <div><b>709</b><span>NASA engines</span></div>
+  <div><b>100%</b><span>Battery coverage</span></div>
+  <div><b>0</b><span>Zenodo false warnings</span></div>
+  <div><b>4</b><span>Patent pending</span></div>
+  <div><b>7+</b><span>Live sandboxes</span></div>
+</section>
+
+</main>
+
+
+<section class="cards-image-section">
+  <h2>VALIDATION COMMAND CENTER</h2>
+  <img src="assets/cards/command_center_cards_en.png" alt="GSC-X validation command center cards">
+</section>
+
+</body>
+</html>

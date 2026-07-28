@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="about-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html" class="active">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="sandboxes.html">SANDBOXY</a>
+    <a href="publications.html">PUBLIKACE</a>
+    <a href="validation.html">VALIDACE</a>
+    <a href="reports.html">REPORTY</a>
+    <a href="repository.html">REPOZITÁŘ</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../about.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">O GSC-X</div>
+  <h1>O PROJEKTU</h1>
+  <p>Prediktivní exekutivní stabilizátor v reálném čase</p>
+</section>
+<section class="about-content">
+
+  <h2>GSC-X Symbiont</h2>
+
+  <p>GSC-X Symbiont je platformně nezávislý prediktivní algoritmus exekutivní stabilizace a provozní rámec navržený pro monitorování v reálném čase, predikci, podporu rozhodování a adaptivní stabilizaci komplexních dynamických systémů.</p>
+
+  <p>Architektura může fungovat buď jako plně samostatná stabilizační platforma, nebo jako symbiotická exekutivní vrstva integrovaná se stávajícími systémy a infrastrukturami.</p>
+
+  <p>Jako samostatná platforma dokáže GSC-X nezávisle zpracovávat telemetrii, vyhodnocovat dynamiku systému, detekovat vznikající nestabilitu, posuzovat provozní riziko a generovat stabilizační rozhodnutí v reálném čase.</p>
+
+  <p>Jako symbiotická exekutivní vrstva může GSC-X rozšířit stávající řídicí, monitorovací, automatizační a rozhodovací architektury bez nutnosti nahrazení základních systémů.</p>
+
+  <h2>Jádrové exekutivní technologie</h2>
+
+  <h3>Exekutivní vrstva GSC-X</h3>
+  <p>Exekutivní vrstva nepřetržitě vyhodnocuje stav systému, provozní riziko, vznikající nestabilitu a stabilizační příležitosti v reálném čase.</p>
+
+  <h3>CM — Kontextová paměť</h3>
+  <p>Kontextová paměť (CM) poskytuje vnitřní reprezentaci nedávné historie systému a umožňuje GSC-X udržovat povědomí o vyvíjejících se podmínkách a rezervách pro zotavení.</p>
+
+  <h3>ELI — Indikátor časné hranice</h3>
+  <p>Indikátor časné hranice (ELI) je navržen k identifikaci blížících se hranic nestability ještě před výskytem klasických překročení prahů, což umožňuje dřívější zásah a lepší provozní odolnost.</p>
+
+  <p>Společně tvoří CM a ELI prediktivní inteligenční jádro architektury GSC-X.</p>
+
+  <h2>Nezávislé na platformě</h2>
+  <ul>
+    <li>Linux</li>
+    <li>Windows</li>
+    <li>Vestavěné systémy</li>
+    <li>Edge zařízení</li>
+    <li>Cloudová infrastruktura</li>
+    <li>Průmyslové řídicí jednotky</li>
+    <li>Lokální runtime prostředí</li>
+    <li>Platformy digitálních dvojčat</li>
+  </ul>
+
+  <h2>Nezávislé na rozhraní</h2>
+  <ul>
+    <li>CSV telemetrické streamy</li>
+    <li>OPC-UA</li>
+    <li>Modbus</li>
+    <li>REST API</li>
+    <li>ROS</li>
+    <li>Digitální dvojčata</li>
+    <li>Vlastní telemetrická rozhraní</li>
+  </ul>
+
+  <p><strong>Bez uzamčení na dodavatele.</strong></p>
+
+  <h2>Současný sandboxový ekosystém</h2>
+  <ul>
+    <li>Industrial Sandbox</li>
+    <li>Reliability Sandbox</li>
+    <li>Fusion Sandbox</li>
+    <li>Robotics Sandbox</li>
+    <li>Battery Sandbox</li>
+    <li>Spaceflight Sandbox</li>
+    <li>Nuclear Sandbox</li>
+    <li>Energy Network Sandbox</li>
+  </ul>
+
+  <h2>Duševní vlastnictví</h2>
+  <p>Podané patentové přihlášky:</p>
+  <ul>
+    <li>GSC-F — PV 2026-216</li>
+    <li>GSC-S — PV 2026-236</li>
+    <li>GSC-C — PV 2026-241</li>
+    <li>GSC-X — PV 2026-242</li>
+  </ul>
+
+  <p><strong>Patent Pending.</strong></p>
+
+  <h2>Vize</h2>
+
+  <p>Cílem GSC-X je poskytnout univerzální prediktivní stabilizační architekturu schopnou zlepšovat bezpečnost, produktivitu, spolehlivost, odolnost, adaptabilitu a dlouhodobou provozní stabilitu napříč různými technologickými doménami.</p>
+
+  <p>Nepřetržitým monitorováním dynamiky systému, identifikací vznikající nestability a podporou proaktivních stabilizačních rozhodnutí je GSC-X navržen tak, aby snižoval provozní riziko, minimalizoval neočekávané poruchy, zlepšoval povědomí o systému a zvyšoval celkový výkon.</p>
+
+  <p>Architektura má pomoci organizacím provozovat komplexní systémy bezpečněji, efektivněji a produktivněji při zachování stability v měnících se a nejistých podmínkách.</p>
+
+  <p>Tento přístup umožňuje GSC-X sloužit jako společný stabilizační rámec napříč průmyslovou automatizací, monitorováním spolehlivosti, robotikou, bateriovými systémy, fúzními technologiemi, kosmickými operacemi, jadernými systémy a budoucími infrastrukturami energetických sítí.</p>
+
+  <p>GSC-X není omezen na jedno odvětví, řídicí systém ani technologickou platformu. Jeho dlouhodobou vizí je stát se univerzální stabilizační architekturou schopnou podporovat budoucí autonomní, průmyslové, vědecké a energetické systémy prostřednictvím prediktivní exekutivní stabilizace.</p>
+
+</section>
+
+</main>
+
+</body>
+</html>

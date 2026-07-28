@@ -1,3 +1,0 @@
-cell,n_cycles,baseline_capacity_proxy,final_capacity_proxy,final_SOH,has_EOL,eol_cycle,first_warning_cycle,coverage,lead_percent,false_warning,cycle_csv
-PL21,238,7.199241105591042,9.50626796238352,1.3204541732879045,False,,,,,1,battery_calce_v1/validation/PL21_calce_smoke_cycles_v1.csv
-PL23,313,8.729311193678045,9.33495474360864,1.0693804512742326,True,2.122058758e-314,5e-324,1.0,2.122058757656e-312,0,battery_calce_v1/validation/PL23_calce_smoke_cycles_v1.csv

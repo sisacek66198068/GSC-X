@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Validation</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+
+</head>
+<body class="validation-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html" class="active">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html" class="active">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cs/validation.html">🇨🇿 CZ</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">VALIDATION</div>
+  <h1>VALIDATION</h1>
+  <p>Reproducible Multi-Domain Validation</p>
+</section>
+
+<section class="about-content">
+
+<h2>Validation Portfolio</h2>
+
+<p><strong>Methodology:</strong><br>
+Offline Validation → Simulation → Hardware-in-the-Loop → Real Deployment
+</p>
+
+<p>
+The objective is reproducible evidence rather than isolated demonstrations. The current public GSC-X sandbox ecosystem contains ten validated domain branches.
+</p>
+
+<hr>
+
+<h3>Reliability Validation</h3>
+
+<p>
+<strong>NASA CMAPSS</strong><br>
+709 Turbofan Engines<br>
+Median WQS = 0.8916<br>
+Detection = 100%<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>CWRU Bearings</strong><br>
+F1 Score = 1.000<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>IMS Bearings</strong><br>
+Lead Horizon = 13.64%<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Industrial Validation</h3>
+
+<p>
+<strong>TRUE Industrial Benchmark</strong><br>
+TRUE N3000 / N10000 industrial validation branch<br>
+Safety improvement, unsafe-time reduction and productivity benchmarking<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Hard Delay Factory TRUE N10000</strong><br>
+GSC-X maintained 100% survival across 10 ms, 50 ms, 150 ms and 300 ms actuator delays<br>
+PID survival dropped under severe 300 ms delay conditions<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Industrial Productivity Validation</strong><br>
+GSC-X achieved higher control productivity with lower energy burden in validated industrial benchmark conditions<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Fusion Validation</h3>
+
+<p>
+<strong>Fusion TRUE N-series Validation</strong><br>
+TRUE N3000, N10000, N100000 and N1000000 validation ladder<br>
+Reduced unsafe time and improved yield-per-energy behavior across large-scale benchmark runs<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Symbiotic Fusion TRUE N1000000</strong><br>
+Validated long-run fusion-inspired nonlinear stability benchmark<br>
+Unsafe-time reduction and energy-efficiency improvement compared with baseline runtime behavior<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>PTM / Metastability Analysis</strong><br>
+Build-up, trigger, recovery, persistence and release dynamics analyzed as part of fusion sandbox validation<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Spaceflight Validation</h3>
+
+<p>
+<strong>Rocket TRUE</strong><br>
+PID Median Error = 80.224<br>
+GSC-X Median Error = 18.481<br>
+Result: 4.34× lower error; 9.43× productivity improvement<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Guidance HARD TRUE N10000</strong><br>
+PID Median Error = 10.986<br>
+GSC-X Median Error = 0.604<br>
+Result: 18.18× lower error<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Waypoint TRUE N10000</strong><br>
+PID Median Error = 5.141<br>
+GSC-X Median Error = 1.438<br>
+Result: 3.57× lower error<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>LunarLander Smoke Validation</strong><br>
+Baseline Crash = 51.5%<br>
+GSC-X Crash = 7.1%<br>
+Result: 7.25× lower crash rate<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Battery Validation</h3>
+
+<p>
+<strong>NASA Battery Dataset</strong><br>
+38 cells audited<br>
+27 standard aging cells<br>
+6 nonstandard cells<br>
+2 invalid baseline cells identified<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>CALCE Battery Validation</strong><br>
+Independent battery degradation validation branch<br>
+Decoded and validated CALCE cell structures<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Oxford Battery Validation</strong><br>
+External battery degradation validation branch<br>
+Cross-dataset predictive health assessment<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Zenodo Battery Validation</strong><br>
+Additional reproducibility and report-linked validation layer<br>
+Status: VALIDATED
+</p>
+
+
+<hr>
+
+<h3>Cardiac Validation</h3>
+
+<p>
+<strong>GSC-X Cardiac Sandbox V1</strong><br>
+MIT-BIH Arrhythmia Database validation<br>
+3216 annotated cardiac events processed<br>
+Phenotype-aware Executive Router V3<br>
+Median predictive lead = 23.75 beats<br>
+Integrated as the 9th Universal Metastability Kernel domain<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Virtual Pacemaker Guard Architecture</strong><br>
+Research architecture for phenotype-aware cardiac metastability monitoring<br>
+MR / MRI executive-state evaluation<br>
+HIGH_RESERVE → STABLE → FRAGILE → LOW_RESERVE → CRITICAL state grammar<br>
+Not a medical device, not a clinical decision system and not safety-certified<br>
+Status: VALIDATED RESEARCH CONCEPT
+</p>
+
+
+<hr>
+
+<h3>Robotics Validation</h3>
+
+<p>
+<strong>Robotics Runtime Mitigation</strong><br>
+Actuator protection, disturbance response, runtime stabilization and digital-twin validation pathway<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Robotics TRUE Validation</strong><br>
+Robotics TRUE N3000 and frozen robotics validation artifacts<br>
+Runtime mitigation and actuator-protection evidence preserved<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Robotics Roadmap</strong><br>
+RoboTwin, embodied AI, RoboCup / ARM-style competition pathway and future hardware-in-the-loop validation<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Nuclear Validation</h3>
+
+<p>
+<strong>Nuclear Transmutation Digital Twin V1.6</strong><br>
+ECO corridor validation with zero unsafe time<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>V2.1 TRUE N10000 Operating Archetypes</strong><br>
+BASE, ADS, FAST, MSR, GSCX_CM_ELI and GSCX_MSR_HYBRID comparison<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>V3 TRUE N10000 Nuclear Operating Map</strong><br>
+Maximum Burn, Safe Performance, Industrial Performance, Balanced and ECO operating corridors<br>
+FAST_HYBRID and ADS_HYBRID confirmed as safe-performance corridors<br>
+GSCX_MSR_HYBRID confirmed as robust ECO corridor<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Energy Network Validation</h3>
+
+<p>
+<strong>IEEE Grid Benchmarks</strong><br>
+IEEE14, IEEE39, IEEE57 and IEEE118 validation branches<br>
+Grid-stability and cascade-risk mitigation analysis<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Czech Outage Replay N10000</strong><br>
+Replay-style resilience validation for outage and cascading-risk scenarios<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>SciGrid-DE N10000</strong><br>
+Large-scale open-grid validation based on German transmission-grid topology<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Grid2Op and Digital Twin Validation</strong><br>
+Operator-style grid validation, observer-layer testing and digital-twin resilience analysis<br>
+Blackout suppression and cascade mitigation branch<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+
+<h3>Internet Infrastructure Validation</h3>
+
+<p>
+<strong>Internet Infrastructure Sandbox V1</strong><br>
+Replay-based validation of executive decision support, digital-twin prediction and infrastructure resilience using public infrastructure datasets<br>
+Alibaba Public Infrastructure replay, Google Cluster replay pipeline verification and synthetic operational crisis scenarios<br>
+Executive certification score: 96.42 for Alibaba Public Replay<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>Digital Twin What-if Validation</strong><br>
+Traffic spikes, AI bursts, cache failures, network degradation, database slowdown and compound operational crises tested under reproducible simulation conditions<br>
+Hybrid mitigation identified as the best-performing configuration within the implemented digital-twin model<br>
+Status: VALIDATED
+</p>
+
+<h2>Validation Summary</h2>
+
+<pre>
+Internet Infrastructure       VALIDATED
+Industrial                 VALIDATED
+Reliability                VALIDATED
+Fusion                     VALIDATED
+Robotics                   VALIDATED
+Battery                    VALIDATED
+Spaceflight                VALIDATED
+Nuclear                    VALIDATED
+Energy Network             VALIDATED
+Cardiac                    VALIDATED
+</pre>
+
+<hr>
+
+<h2>Independent Verification</h2>
+
+<p>
+All validation datasets, benchmark outputs, reports, logs, and reproducibility artifacts are publicly available through the GSC-X repository.
+</p>
+
+<p>
+<a class="pub-link"
+href="https://github.com/sisacek66198068/GSC-X"
+target="_blank">
+GSC-X REPOSITORY →
+</a>
+</p>
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+</body>
+</html>

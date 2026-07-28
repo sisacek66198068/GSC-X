@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Validation</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="validation-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html" class="active">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html" class="active">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">VALIDATION</div>
+  <h1>VALIDATION</h1>
+  <p>Reproducible Multi-Domain Validation</p>
+</section>
+
+<section class="about-content">
+
+<h2>Validation Portfolio</h2>
+
+<p><strong>Methodology:</strong><br>
+Offline Validation → Simulation → Hardware-in-the-Loop → Real Deployment
+</p>
+
+<p>
+The objective is reproducible evidence rather than isolated demonstrations. The current public GSC-X sandbox ecosystem contains eight validated domain branches.
+</p>
+
+<hr>
+
+<h3>Reliability Validation</h3>
+
+<p>
+<strong>NASA CMAPSS</strong><br>
+709 Turbofan Engines<br>
+Median WQS = 0.8916<br>
+Detection = 100%<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>CWRU Bearings</strong><br>
+F1 Score = 1.000<br>
+Status: VALIDATED
+</p>
+
+<p>
+<strong>IMS Bearings</strong><br>
+Lead Horizon = 13.64%<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Industrial Validation</h3>
+
+<p>
+<strong>TRUE Industrial Benchmark</strong><br>
+TRUE N10000<br>
+Safety Improvement<br>
+Productivity Improvement<br>
+Energy Reduction<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Fusion Validation</h3>
+
+<p>
+<strong>Symbiotic Fusion Benchmark</strong><br>
+TRUE N1000000<br>
+Reduced Unsafe Time<br>
+Improved Energy Efficiency<br>
+Improved Yield / Energy Ratio<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Spaceflight Validation</h3>
+
+<p>
+Guidance<br>
+Waypoint Navigation<br>
+Rocket Control<br>
+Lunar Operations<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Battery Validation</h3>
+
+<p>
+NASA Battery Dataset<br>
+38 Cells Analyzed<br>
+27 Standard Cells<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Robotics Validation</h3>
+
+<p>
+RobotWin<br>
+Embodied AI<br>
+RoboCup Preparation<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Nuclear Validation</h3>
+
+<p>
+Nuclear Transmutation Digital Twin<br>
+Nuclear Operating Map<br>
+ECO Corridor and Safe Performance Corridor<br>
+ADS, FAST, MSR and Hybrid operating archetypes<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h3>Energy Network Validation</h3>
+
+<p>
+IEEE14 / IEEE39 / IEEE57 / IEEE118 validation<br>
+Czech Outage Replay N10000<br>
+SciGrid-DE N10000<br>
+Grid2Op and Digital Twin validation<br>
+Blackout suppression and cascade mitigation<br>
+Status: VALIDATED
+</p>
+
+<hr>
+
+<h2>Validation Summary</h2>
+
+<pre>
+Industrial      VALIDATED
+Reliability     VALIDATED
+Fusion          VALIDATED
+Robotics        VALIDATED
+Battery         VALIDATED
+Spaceflight     VALIDATED
+Nuclear         VALIDATED
+Energy Network  VALIDATED
+</pre>
+
+<hr>
+
+<h2>Independent Verification</h2>
+
+<p>
+All validation datasets, benchmark outputs, reports, logs, and reproducibility artifacts are publicly available through the GSC-X repository.
+</p>
+
+<p>
+<a class="pub-link"
+href="https://github.com/sisacek66198068/GSC-X"
+target="_blank">
+GSC-X REPOSITORY →
+</a>
+</p>
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+</body>
+</html>

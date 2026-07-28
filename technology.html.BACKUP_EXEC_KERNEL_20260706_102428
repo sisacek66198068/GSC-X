@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="technology-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html" class="active">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cs/technology.html">🇨🇿 CZ</a>
+  </nav>
+</header>
+
+
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">TECHNOLOGY</div>
+    <h1>EXECUTIVE CORE V1 ARCHITECTURE</h1>
+    <p>Predictive nonlinear executive stabilization architecture for complex dynamic systems.</p>
+  </section>
+
+  <section class="about-content">
+
+    <h2>Technology Overview</h2>
+    <p>
+      GSC-X is a platform-independent predictive executive stabilization architecture designed to operate above existing systems as an additional layer for monitoring, early warning, decision support and adaptive stabilization.
+    </p>
+    <p>
+      Its purpose is not to replace existing control systems, monitoring platforms or infrastructure. GSC-X acts as an executive layer that observes system dynamics, evaluates emerging instability, estimates resilience and supports stabilization before critical transitions fully develop.
+    </p>
+
+    <h2>Executive Core V1</h2>
+    <p>
+      The current architecture is organized as Executive Core V1: a unified processing pipeline from telemetry ingestion to executive-state evaluation, transition analysis, decision support and validation feedback.
+    </p>
+
+    <h3>1. Telemetry Layer</h3>
+    <p>
+      GSC-X can process telemetry from simulations, digital twins, replay datasets, CSV streams, sensors, industrial systems, reliability datasets, robotics environments, cloud infrastructure and domain-specific runtime outputs.
+    </p>
+
+    <h3>2. Dynamic State Evaluation</h3>
+    <p>
+      The architecture continuously evaluates system condition, accumulated instability, operating stress, recovery reserve and dynamic deviation from safe, productive or resilient regimes.
+    </p>
+
+    <h3>3. Core Internal Indices</h3>
+    <p>
+      Executive Core V1 extends the original CM and ELI logic into a broader state-evaluation layer:
+    </p>
+    <ul>
+      <li><strong>CM — Context Memory:</strong> tracks recent dynamic history and recovery context.</li>
+      <li><strong>ELI — Early Limit Indicator:</strong> estimates proximity to future operating boundaries.</li>
+      <li><strong>PTM — Predictive Transition Memory:</strong> captures transition patterns before instability becomes critical.</li>
+      <li><strong>MR — Metastability Reserve:</strong> estimates remaining recovery and stability capacity.</li>
+      <li><strong>MRI — Metastability Risk Index:</strong> summarizes risk of transition toward fragile or critical regimes.</li>
+    </ul>
+
+    <h3>4. Executive State Engine</h3>
+    <p>
+      GSC-X does not evaluate only isolated alarms. It maps system behavior into executive operating states such as:
+    </p>
+    <pre>HIGH_RESERVE → STABLE → FRAGILE → LOW_RESERVE → CRITICAL → RECOVERY</pre>
+
+    <h3>5. Executive Transition Layer</h3>
+    <p>
+      The architecture monitors transitions between states, including degradation, recovery, stabilization and reorganization. This allows GSC-X to distinguish harmless fluctuation from structurally relevant instability.
+    </p>
+
+    <h3>6. Executive Decision Layer</h3>
+    <p>
+      The decision layer can support warning generation, mitigation, routing, operating-mode selection, recovery support and stabilization recommendations depending on domain and validation context.
+    </p>
+
+    <h2>Universal Metastability Kernel</h2>
+    <p>
+      Executive Core V1 is built around an evolving Universal Metastability Kernel currently undergoing successful cross-domain validation across independent engineering and scientific environments.
+    </p>
+    <p>
+      The kernel provides a unified dynamic framework for executive-state evaluation, transition analysis, resilience estimation and adaptive stabilization. Current validation spans reliability, industrial control, fusion-inspired systems, robotics, spaceflight, battery systems, nuclear engineering, energy networks, cardiac dynamics and internet infrastructure.
+    </p>
+    <p>
+      The kernel should currently be understood as a research and validation architecture. A dedicated publication will provide the final formal presentation, reproducibility package and scientific framing.
+    </p>
+
+    <h2>Integration Model</h2>
+    <p>
+      GSC-X is designed as an interface-agnostic layer. It can operate with offline datasets, simulations, digital twins, industrial telemetry, robotics pipelines, reliability-monitoring data, internet infrastructure replays and future real-time control interfaces.
+    </p>
+    <ul>
+      <li>CSV and structured telemetry</li>
+      <li>REST and custom APIs</li>
+      <li>OPC-UA / industrial gateway concepts</li>
+      <li>ROS and robotics pipelines</li>
+      <li>Digital-twin environments</li>
+      <li>Replay validation and what-if simulation</li>
+      <li>Cloud, on-premise and edge runtime environments</li>
+    </ul>
+
+    <h2>Validation Workflow</h2>
+    <pre>Telemetry
+  ↓
+Dynamic State Evaluation
+  ↓
+Executive State Engine
+  ↓
+Transition Analysis
+  ↓
+Executive Decision
+  ↓
+Digital Twin / Replay Validation
+  ↓
+TRUE Benchmark
+  ↓
+Cross-Domain Validation
+  ↓
+Publication
+  ↓
+Pilot Deployment</pre>
+
+    <h2>Technology Status</h2>
+    <p>
+      GSC-X Executive Core V1 is currently implemented as a research and validation architecture with public sandbox environments, benchmark outputs, validation reports, publications and patent-pending architecture components.
+    </p>
+    <p>
+      The current focus is cross-domain validation, reproducibility, technical reporting, Universal Metastability Kernel formalization and preparation for pilot evaluation with industrial, scientific, infrastructure and research partners.
+    </p>
+
+  </section>
+</main>
+
+
+
+
+
+
+</body>
+</html>
