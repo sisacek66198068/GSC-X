@@ -26,6 +26,87 @@
 }
 </style>
 
+
+<style id="gscx-reports-spectral-fullwidth">
+
+/* Spectral Observatory zabere oba sloupce */
+.gscx-spectral-fullwidth{
+  grid-column:1 / -1 !important;
+  width:100% !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+}
+
+/* další reportovací karty pokračují až pod Spectral */
+.gscx-spectral-fullwidth + *{
+  clear:both;
+}
+
+</style>
+
+
+<style id="gscx-spectral-inner-columns">
+
+.gscx-spectral-fullwidth{
+  grid-column:1 / -1 !important;
+  width:100% !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+}
+
+.gscx-spectral-columns{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  gap:56px !important;
+  width:100% !important;
+  margin-top:26px !important;
+  align-items:start !important;
+}
+
+.gscx-spectral-column{
+  min-width:0 !important;
+}
+
+.gscx-spectral-column h4{
+  margin:0 0 10px 0 !important;
+  color:#ffffff !important;
+  font-size:20px !important;
+}
+
+.gscx-spectral-role{
+  color:#b8d7e5 !important;
+  line-height:1.55 !important;
+  margin:0 0 24px 0 !important;
+  max-width:620px !important;
+}
+
+.gscx-spectral-links{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:18px !important;
+}
+
+.gscx-spectral-links .pub-link{
+  display:inline-block !important;
+  width:auto !important;
+  margin:0 !important;
+}
+
+.gscx-spectral-note{
+  margin-top:30px !important;
+  line-height:1.6 !important;
+}
+
+@media(max-width:900px){
+  .gscx-spectral-columns{
+    grid-template-columns:1fr !important;
+    gap:34px !important;
+  }
+}
+
+</style>
+
 </head>
 <body>
 
@@ -44,6 +125,7 @@
     <a href="validation.html">VALIDACE</a>
     <a href="reports.html" class="active">REPORTY</a>
     <a href="repository.html">REPOZITÁŘ</a>
+    <a href="video.html">VIDEO</a>
     <a href="author.html">AUTOR</a>
     <a href="contact.html">KONTAKT</a>
     <a href="../reports.html">🇬🇧 EN</a>
@@ -152,55 +234,93 @@ Každý report nebo dataset je propojen s příslušným sandboxem, validačním
       <li>Validace srdečních exekutivních stavů</li>
     </ul>
   </div>
-    <div class="report-card">
-    <h3>🔭 Spectral Observatory Validation DATASETS V1</h3>
+    
+<div class="report-card gscx-spectral-fullwidth">
 
-    <p><strong>GSC-X Astronomy Factory V1</strong></p>
+  <h3>🔭 Spectral Observatory Validation DATASETS V1</h3>
 
-    <p>
-      <a class="pub-link"
-         href="https://doi.org/10.5281/zenodo.21612643"
-         target="_blank"
-         rel="noopener noreferrer">
-        OTEVŘÍT JWST DATASET →
-      </a>
-    </p>
+  <div class="gscx-spectral-columns">
 
-    <p>
-      <a class="pub-link"
-         href="https://doi.org/10.5281/zenodo.21732325"
-         target="_blank"
-         rel="noopener noreferrer">
-        OTEVŘÍT JWST DATASET →
-      </a>
-    </p>
+    <div class="gscx-spectral-column">
 
-    <p>
-      <a class="pub-link"
-         href="https://doi.org/10.5281/zenodo.21796578"
-         target="_blank"
-         rel="noopener noreferrer">
-        OTEVŘÍT JWST DATASET →
-      </a>
-    </p>
+      <h4>GSC-X Astronomy Factory V1</h4>
 
-    <p><strong>GSC-X Sky Observatory V1</strong></p>
+      <p class="gscx-spectral-role">
+        Analytická vrstva pro reprodukovatelné zpracování spekter,
+        morfologickou analýzu, generování fingerprintů, analýzu podobnosti
+        a vědecké vyhodnocování astronomických pozorování.
+      </p>
 
-    <p>
-      <a class="pub-link"
-         href="https://doi.org/10.5281/zenodo.21918641"
-         target="_blank"
-         rel="noopener noreferrer">
-        OTEVŘÍT JWST DATASET →
-      </a>
-    </p>
+      <div class="gscx-spectral-links">
 
-    <p>
-      Reprodukovatelné analytické datasety odvozené z veřejně dostupných astronomických pozorování
-      a zpracované prostřednictvím pipeline GSC-X Astronomy Factory V1 a GSC-X Sky Observatory V1.
-      Publikované balíčky obsahují odvozené analytické výstupy; původní zdrojová pozorování nejsou redistribuována.
-    </p>
+        <a class="pub-link"
+           href="https://doi.org/10.5281/zenodo.21612643"
+           target="_blank"
+           rel="noopener noreferrer">
+          OTEVŘÍT JWST DATASET →
+        </a>
+
+        <a class="pub-link"
+           href="https://doi.org/10.5281/zenodo.21732325"
+           target="_blank"
+           rel="noopener noreferrer">
+          OTEVŘÍT JWST DATASET →
+        </a>
+
+        <a class="pub-link"
+           href="https://doi.org/10.5281/zenodo.21796578"
+           target="_blank"
+           rel="noopener noreferrer">
+          OTEVŘÍT JWST DATASET →
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="gscx-spectral-column">
+
+      <h4>GSC-X Sky Observatory V1</h4>
+
+      <p class="gscx-spectral-role">
+        Plně autonomní observační a produkční vrstva pro rozsáhlý příjem,
+        zpracování, porovnávání spekter mezi objekty, vyhledávání kandidátů,
+        ranking a reprodukovatelnou vědeckou dohledatelnost.
+      </p>
+
+      <div class="gscx-spectral-links">
+
+        <a class="pub-link"
+           href="https://doi.org/10.5281/zenodo.21918641"
+           target="_blank"
+           rel="noopener noreferrer">
+          OTEVŘÍT JWST DATASET — 50 GB →
+        </a>
+
+        <a class="pub-link"
+           href="https://doi.org/10.5281/zenodo.22082818"
+           target="_blank"
+           rel="noopener noreferrer">
+          OTEVŘÍT JWST DATASET — 100 GB →
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
+
+  <p class="gscx-spectral-note">
+    Reprodukovatelné analytické datasety odvozené z veřejně dostupných
+    astronomických pozorování. GSC-X Astronomy Factory V1 představuje
+    analytickou vrstvu, zatímco GSC-X Sky Observatory V1 zajišťuje plně
+    autonomní observační a produkční workflow. Publikované balíčky obsahují
+    odvozené analytické výstupy; původní zdrojová pozorování nejsou
+    redistribuována.
+  </p>
+
+</div>
+
 
   <div class="report-card report-card-prep">
     <h3>🏭 Industrial Validation Report V1</h3>

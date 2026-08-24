@@ -824,3 +824,38 @@ DISCUSS → AUDIT → PILOT → VALIDATE → DEPLOY";
 .spectral-bg{
   background-image:url("assets/sandbox-bg/Spectral.png");
 }
+
+/* =========================================================
+   SANDBOX CARD UNIFORM LAYOUT
+   ========================================================= */
+
+.sandbox-grid{
+  align-items:stretch;
+}
+
+.sandbox-card{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+
+  min-height:280px !important;
+  height:100%;
+  padding-bottom:52px !important;
+}
+
+.sandbox-card p{
+  margin-bottom:12px;
+}
+
+.sandbox-card .status{
+  position:absolute !important;
+  left:22px !important;
+  bottom:18px !important;
+  margin:0 !important;
+}
+
+.future-card{
+  padding-bottom:22px !important;
+}
+
