@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GSC-X Video | Command Center</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<style id="video-page-only">
+
+body{
+  margin:0;
+  background:#01070b !important;
+}
+
+.video-stage{
+  position:relative;
+  min-height:720px;
+  overflow:hidden;
+  padding:70px 7vw;
+  box-sizing:border-box;
+  background:#01070b;
+}
+
+.video-content{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.video-eyebrow{
+  color:#f5c542;
+  font-family:Consolas,monospace;
+  font-weight:800;
+  letter-spacing:.16em;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.video-title{
+  margin:0 0 22px 0;
+  color:#ffffff;
+  font-family:Impact,"Arial Black",sans-serif;
+  font-size:64px;
+  letter-spacing:3px;
+  line-height:1;
+  text-shadow:0 0 18px rgba(84,216,255,.20);
+}
+
+.video-description{
+  max-width:720px;
+  margin:0;
+  color:#c6e5f2;
+  font-size:19px;
+  line-height:1.65;
+}
+
+.video-projector{
+  position:absolute;
+  z-index:1;
+
+  right:4vw;
+  top:57%;
+  transform:translateY(-50%);
+
+  width:min(1120px,86vw);
+  height:min(1120px,86vw);
+
+  background-image:url('/assets/backgrounds/video-projector.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  opacity:.18;
+
+  filter:
+    grayscale(1)
+    sepia(.18)
+    hue-rotate(155deg)
+    saturate(1.20)
+    brightness(1.00)
+    drop-shadow(0 0 6px rgba(84,216,255,.10));
+
+  pointer-events:none;
+}
+
+.video-stage::before,
+.video-stage::after,
+.video-content::before,
+.video-content::after{
+  content:none !important;
+  display:none !important;
+}
+
+@media(max-width:900px){
+  .video-stage{
+    min-height:650px;
+    padding:55px 30px;
+  }
+
+  .video-title{
+    font-size:48px;
+  }
+
+  .video-projector{
+    width:360px;
+    height:360px;
+    right:-70px;
+    opacity:.14;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png"
+         alt="GSC-X Command Center"
+         class="brand-logo-web">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="sandboxes.html">SANDBOXY</a>
+    <a href="publications.html">PUBLIKACE</a>
+    <a href="validation.html">VALIDACE</a>
+    <a href="reports.html">REPORTY</a>
+    <a href="repository.html">REPOZITÁŘ</a>
+    <a href="video.html" class="active">VIDEO</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../video.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main class="video-stage">
+
+  <div class="video-content">
+
+    <div class="video-eyebrow">
+      GSC-X · VIDEO PREZENTACE
+    </div>
+
+    <h1 class="video-title">
+      GSC-X VIDEO
+    </h1>
+
+    <p class="video-description">
+      Prezentační videa projektu GSC-X, Executive Kernelu,
+      validačních prostředí a dalšího technologického vývoje.
+    </p>
+
+  </div>
+
+  <div class="video-projector" aria-hidden="true"></div>
+
+</main>
+
+</body>
+</html>

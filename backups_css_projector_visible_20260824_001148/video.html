@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GSC-X Video | Command Center</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style id="video-page-only">
+
+/* =========================================================
+   VIDEO PAGE ONLY
+   Žádný převzatý background, pseudo-icon ani otazník.
+   ========================================================= */
+
+body{
+  margin:0;
+  background:#01070b !important;
+}
+
+.video-stage{
+  position:relative;
+  min-height:720px;
+  overflow:hidden;
+  padding:70px 7vw;
+  box-sizing:border-box;
+  background:#01070b;
+}
+
+.video-content{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.video-eyebrow{
+  color:#f5c542;
+  font-family:Consolas,monospace;
+  font-weight:800;
+  letter-spacing:.16em;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.video-title{
+  margin:0 0 22px 0;
+  color:#ffffff;
+  font-family:Impact,"Arial Black",sans-serif;
+  font-size:64px;
+  letter-spacing:3px;
+  line-height:1;
+  text-shadow:0 0 18px rgba(84,216,255,.20);
+}
+
+.video-description{
+  max-width:720px;
+  margin:0;
+  color:#c6e5f2;
+  font-size:19px;
+  line-height:1.65;
+}
+
+/* Pouze existující 55.png — žádný jiný symbol */
+
+/* Výslovně žádné pseudo-elementy */
+.video-stage::before,
+.video-stage::after,
+.video-content::before,
+.video-content::after{
+  content:none !important;
+  display:none !important;
+}
+
+@media(max-width:900px){
+  .video-stage{
+    min-height:650px;
+    padding:55px 30px;
+  }
+
+  .video-title{
+    font-size:48px;
+  }
+
+  .video-projector{
+    width:360px;
+    height:360px;
+    right:-70px;
+    opacity:.14;
+  }
+}
+
+</style>
+
+<style id="gscx-css-projector">
+.video-stage{
+  position:relative;
+  overflow:hidden;
+}
+
+.video-stage::before{
+  content:"";
+  position:absolute;
+  right:7vw;
+  top:57%;
+  transform:translateY(-50%);
+
+  width:420px;
+  height:260px;
+
+  border:2px solid rgba(35,95,105,.18);
+  border-radius:16px;
+
+  box-shadow:
+    inset 0 0 0 8px rgba(35,95,105,.025),
+    0 0 10px rgba(35,95,105,.035);
+
+  pointer-events:none;
+  z-index:0;
+}
+
+/* objektiv */
+.video-stage::after{
+  content:"";
+  position:absolute;
+
+  right:calc(7vw + 390px);
+  top:57%;
+  transform:translateY(-50%);
+
+  width:96px;
+  height:76px;
+
+  border:2px solid rgba(35,95,105,.18);
+  border-radius:14px 4px 4px 14px;
+
+  box-shadow:
+    inset 0 0 0 10px rgba(35,95,105,.018);
+
+  pointer-events:none;
+  z-index:0;
+}
+
+.video-content{
+  position:relative;
+  z-index:2;
+}
+
+/* dvě filmové cívky */
+.video-content::before,
+.video-content::after{
+  content:"";
+  position:absolute;
+  top:145px;
+
+  width:150px;
+  height:150px;
+
+  border:2px solid rgba(35,95,105,.18);
+  border-radius:50%;
+
+  box-shadow:
+    inset 0 0 0 22px rgba(35,95,105,.012),
+    inset 0 0 0 48px rgba(35,95,105,.012);
+
+  pointer-events:none;
+  z-index:-1;
+}
+
+.video-content::before{
+  left:calc(100% + 180px);
+}
+
+.video-content::after{
+  left:calc(100% + 315px);
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png"
+         alt="GSC-X Command Center"
+         class="brand-logo-web">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="video.html" class="active">VIDEO</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cs/video.html">🇨🇿 CZ</a>
+  </nav>
+</header>
+
+<main class="video-stage">
+
+  <div class="video-content">
+
+    <div class="video-eyebrow">
+      GSC-X · VIDEO PRESENTATIONS
+    </div>
+
+    <h1 class="video-title">
+      GSC-X VIDEO
+    </h1>
+
+    <p class="video-description">
+      Video presentations of the GSC-X project, Executive Kernel,
+      validation environments and ongoing technology development.
+    </p>
+
+  </div>
+</main>
+
+</body>
+</html>

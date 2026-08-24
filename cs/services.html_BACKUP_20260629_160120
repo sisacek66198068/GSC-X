@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Services</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="services-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html" class="active">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="../sandboxes.html">SANDBOXY</a>
+    <a href="../publications.html">PUBLIKACE</a>
+    <a href="../validation.html">VALIDACE</a>
+    <a href="../reports.html">REPORTY</a>
+    <a href="../repository.html">REPOZITÁŘ</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../services.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">AUDITY · PILOTY · LICENCOVÁNÍ · SPOLUPRÁCE</div>
+  <h1>SLUŽBY</h1>
+  <p><strong>Snižte prostoje. Zvyšte spolehlivost. Ověřte technologii před nasazením.</strong></p>
+  <p>Obchodní spolupráce, nezávislé technické audity, pilotní projekty, exekutivní AI a validační služby pro systémy citlivé na stabilitu.</p>
+  <p><strong>Validováno napříč oblastmi Industrial · Reliability · Battery · Robotics · Energy · Nuclear · Fusion · Spaceflight.</strong></p>
+</section>
+<section class="about-content">
+
+<h2>Co nabízíme</h2>
+
+<p><strong>GSC-X pomáhá organizacím vyhodnocovat, validovat a nasazovat prediktivní exekutivní stabilizační technologie v provozně kritických prostředích.</strong></p>
+
+<p><p><strong>Od úvodního technického posouzení po validované nasazení poskytuje GSC-X strukturovanou cestu pro vyhodnocení pokročilých stabilizačních technologií před provozní integrací.</strong></p>
+
+<p>Spolupracujeme s průmyslem, technologickými firmami, výzkumnými organizacemi a veřejnými institucemi na vyhodnocování, validaci a nasazování prediktivních stabilizačních technologií v reálných provozních prostředích.</p></p>
+
+<p>Uvítáme diskuse ohledně auditů systémů, pilotních projektů, validačních studií, výzkumné spolupráce, konzultací a licenčních příležitostí.</p>
+
+<h2>Pilotní projekty</h2>
+
+<p>Společné pilotní projekty navržené k vyhodnocení GSC-X v reálných provozních prostředích a ke kvantifikaci měřitelných přínosů.</p>
+
+<ul>
+<li>Zlepšená provozní stabilita</li>
+<li>Dřívější detekce rizik</li>
+<li>Snížené prostoje</li>
+<li>Zvýšená spolehlivost</li>
+<li>Zvýšená produktivita</li>
+<li>Zlepšené situační povědomí</li>
+<li>Schopnosti prediktivního varování</li>
+</ul>
+
+<h2>Audit stability systému</h2>
+
+<p><strong>Naše technické audity poskytují nezávislé posouzení provozní stability, spolehlivosti a vznikajících rizik před nasazením.</strong></p>
+
+<p>Nezávislé posouzení provozní stability, spolehlivostních rizik, dynamických úzkých míst a vznikajících vzorců nestability.</p>
+
+<ul>
+<li>Technické posouzení</li>
+<li>Vyhodnocení stability</li>
+<li>Analýza spolehlivosti</li>
+<li>Vyhodnocení dynamických rizik</li>
+<li>Provozní doporučení</li>
+<li>Validační report</li>
+</ul>
+
+<h2>Hodnocení technologie</h2>
+
+<p>Nezávislé vyhodnocení toho, zda může GSC-X poskytnout měřitelnou hodnotu v konkrétním procesu, infrastruktuře, zařízení nebo provozním prostředí.</p>
+
+<ul>
+<li>Zlepšení stability</li>
+<li>Zvýšení spolehlivosti</li>
+<li>Prevence poruch</li>
+<li>Prediktivní diagnostika</li>
+<li>Provozní odolnost</li>
+<li>Optimalizace výkonu</li>
+</ul>
+
+<h2>Licencování a komerční aplikace</h2>
+
+<p>Organizace se zájmem o aplikaci technologií GSC mohou prozkoumat možnosti licencování a komerční spolupráce.</p>
+
+<ul>
+<li>GSC-F — PV 2026-216</li>
+<li>GSC-S — PV 2026-236</li>
+<li>GSC-C — PV 2026-241</li>
+<li>GSC-X — PV 2026-242</li>
+</ul>
+
+<p><strong>Status: Patent Pending</strong></p>
+
+<h2>Výzkumná a inovační partnerství</h2>
+
+<p>Příležitosti ke spolupráci s univerzitami, výzkumnými ústavy, laboratořemi, inovačními centry, průmyslovými R&D týmy a veřejnými institucemi.</p>
+
+<h2>Technické konzultace</h2>
+
+<ul>
+<li>Analýza stability</li>
+<li>Posouzení spolehlivosti</li>
+<li>Predikce poruch</li>
+<li>Prediktivní údržba</li>
+<li>Vyhodnocení dynamických rizik</li>
+<li>Exekutivní stabilizační architektury</li>
+<li>Adaptivní řídicí systémy</li>
+</ul>
+
+<h2>Typická cesta spolupráce</h2>
+
+<p>
+Úvodní diskuse<br>
+↓<br>
+Audit stability systému<br>
+↓<br>
+Pilotní projekt<br>
+↓<br>
+Validační report<br>
+↓<br>
+Licencování / Nasazení
+</p>
+
+<h2>Obchodní podmínky</h2>
+
+<p><strong>Každá spolupráce začíná úvodní technickou diskusí za účelem definování cílů projektu, rozsahu a nejvhodnějšího modelu spolupráce.</strong></p>
+
+<p><strong>Obchodní podmínky a ceny jsou definovány individuálně podle rozsahu projektu, technické komplexity, validačních požadavků, rozsahu nasazení a modelu spolupráce.</strong></p>
+
+<h2>Kontakt</h2>
+
+<p>Máte zájem o vyhodnocení GSC-X ve vaší organizaci?</p>
+
+<p>Uvítáme diskuse ohledně auditů, pilotních projektů, validačních studií, licenčních příležitostí, výzkumné spolupráce a technických konzultací.</p>
+
+<p><strong>Email:</strong> stepanumartin@gds-gsc-x.com</p>
+
+<p><strong>Telefon:</strong> +420 737 315 405</p>
+
+</section>
+
+</main>
+
+</body>
+</html>

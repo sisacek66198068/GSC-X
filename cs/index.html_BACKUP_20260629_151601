@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Přehled</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="overview-page">
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="../sandboxes.html">SANDBOXY</a>
+    <a href="../publications.html">PUBLIKACE</a>
+    <a href="../validation.html">VALIDACE</a>
+    <a href="../reports.html">REPORTY</a>
+    <a href="../repository.html">REPOZITÁŘ</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../index.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">PREDIKTIVNÍ STABILITA · VALIDACE · PILOTY</div>
+  <h1>GSC-X COMMAND CENTER</h1>
+  <p><strong>Prediktivní exekutivní AI pro systémy, kde stabilita, spolehlivost a včasné varování rozhodují.</strong></p>
+  <p>Snižte prostoje. Zvyšte spolehlivost. Ověřte technologii před nasazením.</p>
+</section>
+
+<section class="about-content">
+
+<h2>Co je GSC-X?</h2>
+<p><strong>GSC-X</strong> je prediktivní exekutivní architektura pro monitorování stability, včasné varování, technické audity a pilotní projekty v kritických a nelineárních systémech.</p>
+
+<h2>Ověřeno napříč doménami</h2>
+<p>Industrial · Reliability · Battery · Robotics · Energy · Nuclear · Fusion · Spaceflight</p>
+
+<h2>Pro české firmy</h2>
+<p>Nabízíme technické audity, pilotní projekty, validační studie, výzkumnou spolupráci a licenční jednání.</p>
+
+<p><a class="pub-link" href="services.html">SLUŽBY A SPOLUPRÁCE →</a></p>
+
+</section>
+</main>
+
+</body>
+</html>

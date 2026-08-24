@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+
+
+
+<style id="gscx-video-projector">
+body{
+  background:#01070b !important;
+}
+
+main{
+  position:relative;
+  min-height:720px;
+  overflow:hidden;
+  background:transparent !important;
+}
+
+main::after{
+  content:"";
+  position:absolute;
+  right:10%;
+  top:28%;
+  width:360px;
+  height:360px;
+
+  background-image:url('/assets/backgrounds/video-bg.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  opacity:.18;
+
+  filter:
+    grayscale(1)
+    brightness(1.35)
+    sepia(.10)
+    hue-rotate(165deg)
+    saturate(.55);
+
+  pointer-events:none;
+  z-index:0;
+}
+
+main > *{
+  position:relative;
+  z-index:1;
+}
+</style>
+
+</head>
+<body class="about-page">
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="sandboxes.html">SANDBOXY</a>
+    <a href="publications.html">PUBLIKACE</a>
+    <a href="validation.html">VALIDACE</a>
+    <a href="reports.html">REPORTY</a>
+    <a href="repository.html">REPOZITÁŘ</a>
+    <a href="videos.html" class="active">VIDEA</a>
+    <a href="references.html">REFERENCE</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../videos.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+
+<main>
+<section class="hero">
+  <div class="eyebrow">PREZENTACE · DEMONSTRACE · VÝZKUM</div>
+  <h1>GSC-X VIDEA</h1>
+  <p>
+    Videoprezentace a demonstrace dokumentující architekturu
+    GSC-X Executive Kernel, validační ekosystém a výzkum.
+  </p>
+</section>
+
+<section>
+  <a href="presentations.html" class="btn">
+    PREZENTACE GSC-X →
+  </a>
+</section>
+</main>
+
+
+</body>
+</html>

@@ -3,190 +3,205 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GSC-X | GDS Foundation</title>
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="style.css">
+
 <style>
-body{
-    margin:0;
-    color:#f5f5f5;
-    font-family:Arial,sans-serif;
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
 
-    background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)),
-        url("https://raw.githubusercontent.com/sisacek66198068/GSC-X/main/web.png");
+.cards-image-section{
+  position:relative;
+}
 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+  75%{opacity:1;transform:scale(1.25);}
+  79%{opacity:.25;transform:scale(.75);}
+  83%{opacity:1;transform:scale(1);}
+  88%{opacity:0;transform:scale(.4);}
+}
+
+
+
+.cards-image-section{
+    position:relative;
 }
 
 
 
 
 
-h1{
-font-size:96px;
-margin:20px 0;
-color:#fff;
-letter-spacing:-4px;
-text-shadow:
-0 0 15px rgba(255,180,0,.18),
-0 0 40px rgba(255,120,0,.14)
-}
-h2{
-font-size:34px;
-color:#ffd089;
-font-weight:500;
-text-shadow:0 0 18px rgba(255,190,120,.15)
-}
-p{font-size:18px;line-height:1.7;color:#d6d6d6;max-width:850px}
-.tag{display:inline-block;padding:10px 18px;border:1px solid #ff990055;border-radius:18px;color:#ffbb66;background:#ff880014}
-.card{
-margin-top:34px;
-background:rgba(8,10,16,.72);
-border:1px solid rgba(255,170,0,.16);
-border-radius:30px;
-padding:34px;
-max-width:920px;
 
-backdrop-filter:blur(12px);
+.cards-image-section{
+    position:relative;
+}
 
-box-shadow:
-0 0 45px rgba(255,136,0,.08),
-inset 0 0 25px rgba(255,255,255,.03)
+24%{
+        opacity:.85;
+        transform:translate(0,0) scale(.9);
+        filter:brightness(1.2);
+    }
+
+    40%{
+        opacity:1;
+        transform:translate(85px,-28px) scale(1.15);
+        filter:brightness(1.55);
+    }
+
+    56%{
+        opacity:.75;
+        transform:translate(165px,-58px) scale(.9);
+        filter:brightness(1.15);
+    }
+
+    68%{
+        opacity:0;
+        transform:translate(230px,-82px) scale(.45);
+        filter:brightness(.75);
+    }
 }
-.btn{display:inline-block;margin:20px 12px 0 0;padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:bold}
-.primary{
-background:#ff9500;
-color:#000;
-box-shadow:0 0 25px rgba(255,149,0,.28)
+
+
+
+
+
+
+
+
+    24%{
+        opacity:.75;
+        transform:translate(0,0) scale(.85);
+        filter:brightness(1.1);
+    }
+
+    40%{
+        opacity:1;
+        transform:translate(70px,-22px) scale(1.15);
+        filter:brightness(1.55);
+    }
+
+    56%{
+        opacity:.8;
+        transform:translate(145px,-48px) scale(.95);
+        filter:brightness(1.25);
+    }
+
+    70%{
+        opacity:0;
+        transform:translate(215px,-70px) scale(.45);
+        filter:brightness(.75);
+    }
 }
-.secondary{
-border:1px solid rgba(255,255,255,.22);
-color:white;
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(10px)
+
+
+
+
+@keyframes energyFlowPulse{
+    0%,18%,100%{
+        opacity:0;
+        transform:translate(0,0) scale(.45);
+        filter:brightness(.7);
+    }
+
+    24%{
+        opacity:.75;
+        transform:translate(0,0) scale(.85);
+        filter:brightness(1.1);
+    }
+
+    40%{
+        opacity:1;
+        transform:translate(70px,-22px) scale(1.15);
+        filter:brightness(1.55);
+    }
+
+    56%{
+        opacity:.8;
+        transform:translate(145px,-48px) scale(.95);
+        filter:brightness(1.25);
+    }
+
+    70%{
+        opacity:0;
+        transform:translate(215px,-70px) scale(.45);
+        filter:brightness(.75);
+    }
 }
-section{padding:70px 8%;border-bottom:1px solid #222}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-.metric{font-size:46px;color:#ffb347;font-weight:bold}
-footer{padding:45px 8%;color:#aaa;background:#05070d;line-height:1.8}
+
+
 </style>
+
+<style id="jwst-analysis-style">
+.stats b .jwst-analysis-label{
+  color:#b8d7e5 !important;
+  font-size:18px !important;
+  font-weight:400 !important;
+  margin-left:6px;
+}
+</style>
+
 </head>
 <body>
 
-<section class="hero">
-<div class="tag">GDS Foundation · Generative Stability Control
-<p style="margin-top:28px; line-height:1.8;">
-<strong style="color:#ffb347;">Patent Applications Filed</strong><br>
-GSC-F • GSC-S • GSC-C • GSC-X<br>
-<span style="color:#cccccc;">
-Czech Industrial Property Office
-</span><br>
-PV 2026-216 • PV 2026-236 • PV 2026-241 • PV 2026-242
-</p>
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html" class="active">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="video.html">VIDEO</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cs/index.html">🇨🇿 CZ</a>
+  </nav>
+</header>
 
-</div>
-
-<h1>GSC-X</h1>
-<h2>From stellar stability to nonlinear executive control.</h2>
-
-<p>
-GSC-X is a nonlinear predictive stabilization architecture for highly unstable dynamic systems.
-It is built on the GDS foundation — a gravitational-dynamic stability framework inspired by nonlinear cosmic and stellar dynamics.
-</p>
-
-<div class="card">
-<h2>GDS Foundation</h2>
-<p>
-GDS (Gravitational Dynamic System) is a nonlinear gravitational-dynamic framework.
-High-precision numerical conservation tests reached approximately 10⁻¹⁵ relative precision.
-</p>
-<p>
-GSC-X translates this stability principle into a symbiotic executive architecture:
-predictive scanning, adaptive decision logic, nonlinear stabilization, recovery, and adaptation.
-</p>
-</div>
-
-<a class="btn primary" href="https://github.com/sisacek66198068/GSC-X">Explore Repository</a>
-<a class="btn primary" href="https://doi.org/10.5281/zenodo.20156104" target="_blank">GSC-X Publication</a>
-<a class="btn secondary" href="mailto:stepanumartin@gds-gsc-x.com">Contact</a>
-<br><br>
-
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">EXECUTIVE KERNEL · NONLINEAR STABILITY · PREDICTIVE CONTROL</div>
+  <h1><span class="gscx-title">GSC-X</span> <span class="cc-title">COMMAND CENTER</span></h1>
+  <p>GSC-X Executive Kernel is a platform-independent predictive executive stabilization architecture designed for monitoring, prediction, decision support and stabilization of complex dynamic systems across industrial, reliability, fusion, robotics, battery, spaceflight, nuclear, energy network, cardiac and internet infrastructure domains, including autonomous astronomical spectral analysis, morphology analysis and scientific observation through the Spectral Observatory.</p>
 </section>
 
-<section>
-<h2>Live GSC-X Sandbox Ecosystem</h2>
-<p>
-Public cloud demonstrators validating GSC-X as a nonlinear executive stability architecture
-across industrial control, fusion, robotics, nuclear, spaceflight and reliability environments.
-</p>
-
-<div class="grid">
-<div class="card">
-<h2>Industrial Sandbox</h2>
-<p>PID vs GSC-X productivity, stability and runtime-control demonstration.</p>
-<a class="btn primary" href="https://sandbox.gds-gsc-x.com" target="_blank">Open Industrial</a>
-</div>
-
-<div class="card">
-<h2>Fusion Sandbox</h2>
-<p>Nonlinear plasma-like stabilization and TRUE/N3000 validation environment.</p>
-<a class="btn primary" href="https://fusion.gds-gsc-x.com" target="_blank">Open Fusion</a>
-</div>
-
-<div class="card">
-<h2>Robotics Sandbox</h2>
-<p>Executive runtime mitigation for actuator stress, thermal load and delayed control.</p>
-<a class="btn primary" href="https://robotics.gds-gsc-x.com" target="_blank">Open Robotics</a>
-</div>
-
-<div class="card">
-<h2>Nuclear Sandbox</h2>
-<p>Thermal escalation suppression and HARD TRUE/N10000 nuclear-like runtime validation.</p>
-<a class="btn primary" href="https://nuclear.gds-gsc-x.com" target="_blank">Open Nuclear</a>
-</div>
-
-<div class="card">
-<h2>Spaceflight Sandbox</h2>
-<p>Rocket guidance, waypoint navigation, lunar operations and autonomous mission control validation.</p>
-<a class="btn primary" href="https://spaceflight.gds-gsc-x.com" target="_blank">Open Spaceflight</a>
-</div>
-
-<div class="card">
-<h2>Reliability Sandbox</h2>
-<p>NASA CMAPSS, IMS Bearings, CWRU and predictive maintenance validation framework.</p>
-<a class="btn primary" href="https://reliability.gds-gsc-x.com" target="_blank">Open Reliability</a>
-</div>
-</div>
+<section class="stats">
+  <div><b>709</b><span>NASA engines</span></div>
+  <div><b>100%</b><span>Battery coverage</span></div>
+  <div><b>100% <span class="jwst-analysis-label">Analysis</span></b><span>28,327 JWST spectra<br>100 GB</span></div>
+  <div><b>4</b><span>Patent pending</span></div>
+  <div><b>11</b><span>Live sandboxes</span></div>
+  <div><b>12</b><span>Key Publications</span></div>
 </section>
 
-<section>
-<h2>Fusion Endurance Benchmarks</h2>
-<div class="grid">
-<div class="card"><div>SURVIVAL RATE</div><div class="metric">100%</div><p>Full survival during endurance fusion-core validation benchmarks.</p></div>
-<div class="card"><div>UNSAFE TIME</div><div class="metric">0</div><p>No unsafe operational intervals detected during validation runs.</p></div>
-<div class="card"><div>YIELD / ENERGY</div><div class="metric">353+</div><p>High nonlinear productivity efficiency under delayed-feedback conditions.</p></div>
-</div>
-</section>
+</main>
 
-<section>
-<h2>Symbiotic Executive Architecture</h2>
-<p>SCAN → DECIDE → STABILIZE → RECOVER → ADAPT</p>
-</section>
 
-<footer>
-<strong>Martin Štěpánů</strong><br>
-Independent Researcher | Czech Republic<br>
-ORCID: 0009-0007-0409-6037<br>
-Founder of the GDS (Gravitational Dynamic System) Framework<br>
-Architect of GSC-X Nonlinear Executive Stabilization Systems<br>
-Website: https://gds-gsc-x.com
-<br>
-Business ID (CZ): 71985981
-<br>
-Email: stepanumartin@gds-gsc-x.com
-</footer>
+<section class="cards-image-section">
+  <img src="assets/cards/command_center_cards_en.png" alt="GSC-X validation command center cards">
+</section>
 
 </body>
 </html>

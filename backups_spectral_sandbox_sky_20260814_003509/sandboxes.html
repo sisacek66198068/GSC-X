@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+
+.cardiac-bg{
+background:
+linear-gradient(rgba(2,10,18,.35),rgba(2,10,18,.45)),
+url("assets/cards/cardiac_card_bg.png");
+background-size:100%;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+
+
+.future-card{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+min-height:330px;
+border:1px dashed rgba(0,220,255,.35);
+background:rgba(2,10,18,.55);
+}
+
+.future-dots{
+display:flex;
+gap:18px;
+margin-bottom:28px;
+}
+
+.future-dots span{
+width:14px;
+height:14px;
+border-radius:50%;
+background:#17d8ff;
+box-shadow:0 0 18px #17d8ff;
+animation:pulseDots 1.8s infinite ease-in-out;
+}
+
+.future-dots span:nth-child(2){
+animation-delay:.3s;
+}
+
+.future-dots span:nth-child(3){
+animation-delay:.6s;
+}
+
+@keyframes pulseDots{
+0%,100%{opacity:.35;transform:scale(.9);}
+50%{opacity:1;transform:scale(1.15);}
+}
+
+
+
+.robotics-bg{
+position:relative;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
+  <nav class="nav">
+    <a href="overview.html">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html" class="active">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cs/sandboxes.html">🇨🇿 CZ</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="sandboxes">
+  <div class="eyebrow">GSC-X SANDBOX ECOSYSTEM</div>
+  <h1>SANDBOXES</h1>
+  <p>Domain-oriented validation and demonstration environments built around the GSC-X Executive Kernel architecture.</p>
+</section>
+
+<section class="sandbox-grid">
+
+  <div class="sandbox-card industrial-bg" onclick="window.open('https://sandbox.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Industrial Sandbox</h2>
+    <p>Predictive executive stabilization for industrial processes, automation systems, production lines, and high-risk machinery.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card reliability-bg" onclick="window.open('https://reliability.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Reliability Sandbox</h2>
+    <p>Predictive maintenance, health monitoring, anomaly detection, and early warning for degradation-driven systems.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card fusion-bg" onclick="window.open('https://fusion.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Fusion Sandbox</h2>
+    <p>Fusion-inspired instability monitoring and executive stabilization for plasma-like nonlinear dynamic environments.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card robotics-bg" onclick="window.open('https://robotics.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Robotics Sandbox</h2>
+    <p>Predictive stabilization and adaptive control support for robotic systems, automation workflows, and embodied AI environments.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card battery-bg" onclick="window.open('https://battery.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Battery Sandbox</h2>
+    <p>Battery health monitoring, degradation analysis, predictive warning, and reliability validation across independent datasets.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card spaceflight-bg" onclick="window.open('https://spaceflight.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Spaceflight Sandbox</h2>
+    <p>Guidance, autonomy, trajectory stability, mission control support, and predictive stabilization for spaceflight systems.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card nuclear-bg" onclick="window.open('https://nuclear.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Nuclear Sandbox</h2>
+    <p>Predictive stabilization and early-warning architecture for nuclear-related monitoring, safety, and high-risk dynamic systems.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+  <div class="sandbox-card energy-bg" onclick="window.open('https://energy-network.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Energy Network Sandbox</h2>
+    <p>Executive stabilization, resilience monitoring, and adaptive decision support for modern energy networks.</p>
+    <span class="status active">VALIDATED</span>
+    
+  </div>
+
+
+  <div class="sandbox-card cardiac-bg" onclick="window.open('https://cardiac.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Cardiac Sandbox</h2>
+    <p>Predictive executive stabilization, physiological monitoring, early-warning evaluation, phenotype-aware analysis and adaptive decision support for cardiac dynamic systems.</p>
+    <span class="status active">VALIDATED</span>
+  </div>
+
+
+
+
+
+  <div class="sandbox-card internet-bg" onclick="window.open('https://internet.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Internet Infrastructure Sandbox</h2>
+    <p>Predictive stabilization and executive monitoring for internet infrastructure, cloud platforms, datacenters and digital communication ecosystems.</p>
+    <span class="status active">VALIDATED</span>
+  </div>
+
+
+
+  <div class="sandbox-card spectral-bg" onclick="window.open('https://spectral.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Spectral Observatory</h2>
+    <p>Executive exploration of validated astronomical spectra, morphology analysis and scientific traceability.</p>
+    <span class="status active">VALIDATED</span>
+  </div>
+
+<div class="sandbox-card future-card">
+
+<div class="future-dots">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<h2>Coming Soon</h2>
+
+<p>The GSC-X ecosystem continues to expand with new validation domains and research environments.</p>
+
+</div>
+
+
+
+</section>
+</main>
+
+
+
+
+</body>
+</html>

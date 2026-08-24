@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GSC-X Video | Command Center</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style id="video-page-only">
+
+/* =========================================================
+   VIDEO PAGE ONLY
+   Žádný převzatý background, pseudo-icon ani otazník.
+   ========================================================= */
+
+body{
+  margin:0;
+  background:#01070b !important;
+}
+
+.video-stage{
+  position:relative;
+  min-height:720px;
+  overflow:hidden;
+  padding:70px 7vw;
+  box-sizing:border-box;
+  background:#01070b;
+}
+
+.video-content{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.video-eyebrow{
+  color:#f5c542;
+  font-family:Consolas,monospace;
+  font-weight:800;
+  letter-spacing:.16em;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.video-title{
+  margin:0 0 22px 0;
+  color:#ffffff;
+  font-family:Impact,"Arial Black",sans-serif;
+  font-size:64px;
+  letter-spacing:3px;
+  line-height:1;
+  text-shadow:0 0 18px rgba(84,216,255,.20);
+}
+
+.video-description{
+  max-width:720px;
+  margin:0;
+  color:#c6e5f2;
+  font-size:19px;
+  line-height:1.65;
+}
+
+/* Pouze existující 55.png — žádný jiný symbol */
+
+/* Výslovně žádné pseudo-elementy */
+
+
+@media(max-width:900px){
+  .video-stage{
+    min-height:650px;
+    padding:55px 30px;
+  }
+
+  .video-title{
+    font-size:48px;
+  }
+
+  .video-projector{
+    width:360px;
+    height:360px;
+    right:-70px;
+    opacity:.14;
+  }
+}
+
+</style>
+
+
+
+
+
+<style id="gscx-css-clapperboard">
+
+.video-stage{
+  position:relative;
+  overflow:hidden;
+}
+
+/* TĚLO KLAPKY */
+.video-stage::before{
+  content:"";
+  position:absolute;
+
+  right:8vw;
+  top:58%;
+
+  width:390px;
+  height:235px;
+
+  transform:
+    translateY(-50%)
+    rotate(-2deg);
+
+  border:2px solid rgba(36,105,115,.20);
+  border-radius:8px;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0 24%,
+      rgba(36,105,115,.08) 24.5% 25%,
+      transparent 25.5% 100%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0 22%,
+      rgba(36,105,115,.09) 22.5% 23%,
+      transparent 23.5% 48%,
+      rgba(36,105,115,.09) 48.5% 49%,
+      transparent 49.5% 74%,
+      rgba(36,105,115,.09) 74.5% 75%,
+      transparent 75.5% 100%
+    );
+
+  opacity:.55;
+
+  box-shadow:
+    0 0 8px rgba(36,105,115,.035);
+
+  pointer-events:none;
+  z-index:0;
+}
+
+/* HORNÍ OTEVŘENÁ KLAPKA */
+.video-stage::after{
+  content:"";
+  position:absolute;
+
+  right:7.2vw;
+  top:39%;
+
+  width:420px;
+  height:62px;
+
+  transform:
+    rotate(-11deg);
+
+  transform-origin:left center;
+
+  border:2px solid rgba(36,105,115,.22);
+  border-radius:6px;
+
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 42px,
+      rgba(36,105,115,.11) 42px 70px,
+      transparent 70px 112px
+    );
+
+  opacity:.58;
+
+  box-shadow:
+    0 0 8px rgba(36,105,115,.04);
+
+  pointer-events:none;
+  z-index:0;
+}
+
+.video-content{
+  position:relative;
+  z-index:2;
+}
+
+/* žádné další pseudo prvky */
+.video-content::before,
+.video-content::after{
+  content:none !important;
+  display:none !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png"
+         alt="GSC-X Command Center"
+         class="brand-logo-web">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="video.html" class="active">VIDEO</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cs/video.html">🇨🇿 CZ</a>
+  </nav>
+</header>
+
+<main class="video-stage">
+
+  <div class="video-content">
+
+    <div class="video-eyebrow">
+      GSC-X · VIDEO PRESENTATIONS
+    </div>
+
+    <h1 class="video-title">
+      GSC-X VIDEO
+    </h1>
+
+    <p class="video-description">
+      Video presentations of the GSC-X project, Executive Kernel,
+      validation environments and ongoing technology development.
+    </p>
+
+  </div>
+</main>
+
+</body>
+</html>

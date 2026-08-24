@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="technology-page">
+
+<header class="topbar">
+  <div class="brand">
+    <img src="/assets/brand/LOGO_WEB.png" alt="GSC-X Command Center" class="brand-logo-web">
+  </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html" class="active">TECHNOLOGIE</a>
+    <a href="sandboxes.html">SANDBOXY</a>
+    <a href="publications.html">PUBLIKACE</a>
+    <a href="validation.html">VALIDACE</a>
+    <a href="reports.html">REPORTY</a>
+    <a href="repository.html">REPOZITÁŘ</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../technology.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">TECHNOLOGIE</div>
+    <h1>ARCHITEKTURA EXECUTIVE KERNEL</h1>
+    <p>Prediktivní nelineární exekutivní stabilizační architektura pro komplexní dynamické systémy.</p>
+  </section>
+
+  <section class="about-content">
+
+    <h2>Přehled technologie</h2>
+    <p>
+      GSC-X je platformně nezávislá prediktivní exekutivní stabilizační architektura navržená tak, aby fungovala nad stávajícími systémy jako dodatečná vrstva monitoringu, časného varování, podpory rozhodování a adaptivní stabilizace.
+    </p>
+    <p>
+      Jejím účelem není nahrazovat stávající řídicí systémy, monitorovací platformy ani infrastrukturu. GSC-X funguje jako exekutivní vrstva, která pozoruje dynamiku systému, vyhodnocuje vznikající nestabilitu, odhaduje odolnost a podporuje stabilizaci dříve, než se kritické přechody plně rozvinou.
+    </p>
+
+    <h2>Executive Kernel</h2>
+    <p>
+      Současná architektura je organizována jako Executive Kernel: sjednocená zpracovatelská pipeline od příjmu telemetrie přes vyhodnocení exekutivního stavu, analýzu přechodů, podporu rozhodování až po validační zpětnou vazbu.
+    </p>
+
+    <h3>1. Vrstva příjmu telemetrie</h3>
+    <p>
+      GSC-X dokáže zpracovávat telemetrii ze simulací, digitálních dvojčat, replay datasetů, CSV streamů, senzorů, průmyslových systémů, datasetů spolehlivosti, robotických prostředí, cloudové infrastruktury a doménově specifických runtime výstupů.
+    </p>
+
+    <h3>2. Vyhodnocení dynamického stavu</h3>
+    <p>
+      Architektura nepřetržitě vyhodnocuje stav systému, akumulovanou nestabilitu, provozní stres, rezervu zotavení a dynamickou odchylku od bezpečných, produktivních nebo odolných režimů.
+    </p>
+
+    <h3>3. Jádrové interní indexy</h3>
+    <p>
+      Executive Kernel rozšiřuje původní logiku CM a ELI do širší vrstvy vyhodnocení stavu:
+    </p>
+    <ul>
+      <li><strong>CM — Kontextová paměť:</strong> sleduje nedávnou dynamickou historii a kontext zotavení.</li>
+      <li><strong>ELI — Indikátor časné hranice:</strong> odhaduje přiblížení k budoucím provozním hranicím.</li>
+      <li><strong>PTM — Prediktivní paměť přechodů:</strong> zachycuje vzorce přechodů dříve, než se nestabilita stane kritickou.</li>
+      <li><strong>MR — Metastabilní rezerva:</strong> odhaduje zbývající kapacitu zotavení a stability.</li>
+      <li><strong>MRI — Index metastabilního rizika:</strong> shrnuje riziko přechodu do křehkého nebo kritického režimu.</li>
+    </ul>
+
+    <h3>4. Executive State Engine</h3>
+    <p>
+      GSC-X nevyhodnocuje pouze izolované alarmy. Mapuje chování systému do exekutivních provozních stavů, například:
+    </p>
+    <pre>HIGH_RESERVE → STABLE → FRAGILE → LOW_RESERVE → CRITICAL → RECOVERY</pre>
+
+    <h3>5. Vrstva exekutivních přechodů</h3>
+    <p>
+      Architektura sleduje přechody mezi stavy, včetně degradace, zotavení, stabilizace a reorganizace. Díky tomu může GSC-X rozlišit neškodnou fluktuaci od strukturálně významné nestability.
+    </p>
+
+    <h3>6. Exekutivní rozhodovací vrstva</h3>
+    <p>
+      Rozhodovací vrstva může podporovat generování varování, mitigaci, routing, výběr provozního režimu, podporu zotavení a stabilizační doporučení podle konkrétní domény a validačního kontextu.
+    </p>
+
+    <h2>Universal Metastability Kernel Framework</h2>
+    <p>
+      Výzkum Executive Kernelu je dále rozšiřován prostřednictvím vznikajícího Universal Metastability Kernel Frameworku, který aktuálně prochází mezidoménovou validací napříč nezávislými inženýrskými a vědeckými prostředími.
+    </p>
+    <p>
+      Kernel poskytuje sjednocený dynamický rámec pro vyhodnocení exekutivního stavu, analýzu přechodů, odhad odolnosti a adaptivní stabilizaci. Současná validace zahrnuje spolehlivost, průmyslové řízení, fusion-inspired systémy, robotiku, spaceflight, bateriové systémy, jaderné inženýrství, energetické sítě, srdeční dynamiku, internetovou infrastrukturu a Spectral Observatory.
+    </p>
+    <p>
+      Kernel je v tuto chvíli vhodné chápat jako výzkumnou a validační architekturu. Samostatná publikace poskytne finální formální prezentaci, reprodukovatelné artefakty a vědecké zasazení.
+    </p>
+
+    <h2>Integrační model</h2>
+    <p>
+      GSC-X je navržen jako vrstva nezávislá na rozhraní. Může pracovat s offline datasety, simulacemi, digitálními dvojčaty, průmyslovou telemetrií, robotickými pipeline, daty monitorování spolehlivosti, replay validací internetové infrastruktury a budoucími rozhraními řízení v reálném čase.
+    </p>
+    <ul>
+      <li>CSV a strukturovaná telemetrie</li>
+      <li>REST a vlastní API</li>
+      <li>OPC-UA / koncepty průmyslových bran</li>
+      <li>ROS a robotické pipeline</li>
+      <li>Prostředí digitálních dvojčat</li>
+      <li>Replay validace a what-if simulace</li>
+      <li>Cloudová, lokální a edge runtime prostředí</li>
+    </ul>
+
+    <h2>Validační workflow</h2>
+    <pre>Telemetry
+  ↓
+Dynamic State Evaluation
+  ↓
+Executive State Engine
+  ↓
+Transition Analysis
+  ↓
+Executive Decision
+  ↓
+Digital Twin / Replay Validation
+  ↓
+TRUE Benchmark
+  ↓
+Cross-Domain Validation
+  ↓
+Publication
+  ↓
+Pilot Deployment</pre>
+
+    <h2>Stav technologie</h2>
+    <p>
+      GSC-X Executive Kernel je aktuálně implementován jako výzkumná a validační architektura s veřejnými sandboxovými prostředími, benchmarkovými výstupy, validačními reporty, publikacemi a architekturními komponentami zahrnutými v podaných patentových přihláškách. Stav patentových přihlášek: Patent Pending.
+    </p>
+    <p>
+      Současné zaměření je mezidoménová validace, reprodukovatelnost, technické reportování, formalizace Universal Metastability Kernel Frameworku a příprava na pilotní vyhodnocení s průmyslovými, vědeckými, infrastrukturními a výzkumnými partnery.
+    </p>
+
+  </section>
+</main>
+
+
+
+</body>
+</html>

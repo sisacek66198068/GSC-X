@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Publications</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html" class="active">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html" class="active">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="publications">
+  <div class="eyebrow">RESEARCH EVOLUTION · GDS · GSC-X</div>
+  <h1>PUBLICATIONS</h1>
+  <p>Scientific publications documenting the evolution from dynamic stability principles to validated predictive executive stabilization architectures.</p>
+</section>
+
+<section class="about-content">
+
+  <h2>Research Evolution of GDS and GSC-X</h2>
+
+  <p>The publications below document the progressive development of the GDS framework, the emergence of the GSC-X architecture, the discovery of metastable dynamics, and the ongoing evolution toward advanced symbiotic executive stabilization systems.</p>
+
+  <div class="publication-grid">
+
+    <div class="publication-card">
+      <span class="status dev">FOUNDATION</span>
+      <h3>GDS — Gravitational Dynamic System</h3>
+      <p>The foundational framework that introduced dynamic stability as a governing principle of complex nonlinear systems.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20037474" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card">
+      <span class="status dev">FIRST INTEGRATED ARCHITECTURE</span>
+      <h3>GSC-X v7 – The First Symbiotic Executive</h3>
+
+      <p>From reactive control to symbiotic executive stability. The first fully integrated implementation of the GSC-X architecture.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.19900728" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card">
+      <span class="status active">FLAGSHIP PUBLICATION</span>
+      <h3>GSC-X v9.1 — Extended Benchmark Edition</h3>
+      <p>Predictive nonlinear executive stabilization with improved benchmark performance, safety, productivity and reliability metrics.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20156104" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card">
+      <span class="status dev">DISCOVERY</span>
+      <h3>Emergent Metastable Corridors</h3>
+      <p>Research identifying metastable corridors as deeper dynamic structures supporting adaptive functioning and long-term survival in unstable environments.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20365379" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card">
+      <span class="status active">LATEST PUBLICATION</span>
+      <h3>Regenerative Metastability</h3>
+      <p>A validated investigation proposing regenerative metastability as a universal principle of organization and survival in complex systems.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20688368" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card">
+      <span class="status active">VALIDATION REPORT</span>
+      <h3>Energy Network Validation Report V1</h3>
+      <p>Validation of the GSC-X Energy Network Sandbox including IEEE benchmark systems, Czech outage replay, SciGrid-DE, Grid2Op and Digital Twin studies.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20779099" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card">
+      <span class="status soon">NEXT GENERATION</span>
+      <h3>GSC-X Symbiotic Five-Hybrid</h3>
+      <p>The next research generation integrating GDS, CM, ELI, metastable corridors and regenerative metastability into a unified executive architecture.</p>
+    </div>
+
+  </div>
+
+  <h2>Research Resources</h2>
+
+  <div class="resource-list">
+
+    <p><a class="pub-link" href="https://orcid.org/0009-0007-0409-6037" target="_blank">ORCID PROFILE →</a><br>
+    Research profile and complete publication record.</p>
+
+    <p><a class="pub-link" href="https://github.com/sisacek66198068/GSC-X" target="_blank">GSC-X REPOSITORY →</a><br>
+    Validation results, benchmarks, reports and sandbox ecosystem.</p>
+
+    <p><a class="pub-link" href="https://github.com/sisacek66198068/GDS-framework" target="_blank">GDS FRAMEWORK REPOSITORY →</a><br>
+    Foundational framework and supporting theoretical research.</p>
+
+  </div>
+
+  <h2>Open Science</h2>
+
+  <p>All publications are publicly accessible through Zenodo and are accompanied by validation reports, benchmark results, and reproducible research documentation whenever available.</p>
+
+</section>
+
+</main>
+
+
+
+
+</body>
+</html>

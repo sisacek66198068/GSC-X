@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="technology-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html" class="active">TECHNOLOGIE</a>
+    <a href="../sandboxes.html">SANDBOXY</a>
+    <a href="../publications.html">PUBLIKACE</a>
+    <a href="../validation.html">VALIDACE</a>
+    <a href="../reports.html">REPORTY</a>
+    <a href="../repository.html">REPOZITÁŘ</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../technology.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">TECHNOLOGIE GSC-X</div>
+  <h1>TECHNOLOGIE</h1>
+  <p>Jádrová exekutivní architektura</p>
+</section>
+<section class="about-content">
+
+  <h2>Přehled technologie</h2>
+
+  <p>GSC-X je platformně nezávislá prediktivní exekutivní stabilizační architektura navržená tak, aby fungovala nad stávajícími systémy jako vrstva stabilizace, varování a podpory rozhodování v reálném čase.</p>
+
+  <p>Jejím účelem není nahrazovat stávající řídicí systémy, monitorovací systémy ani infrastrukturu. GSC-X funguje jako dodatečná exekutivní vrstva, která pozoruje dynamiku systému, vyhodnocuje vznikající riziko a podporuje adaptivní stabilizaci dříve, než se nestabilita stane kritickou.</p>
+
+  <h2>Exekutivní architektura</h2>
+
+  <h3>1. Vrstva příjmu telemetrie</h3>
+  <p>GSC-X dokáže zpracovávat příchozí telemetrii ze simulací, digitálních dvojčat, CSV streamů, senzorů, průmyslových systémů, datasetů spolehlivosti, robotických prostředí a doménově specifických runtime výstupů.</p>
+
+  <h3>2. Vrstva vyhodnocení stavu</h3>
+  <p>Architektura nepřetržitě vyhodnocuje stav systému, růst nestability, provozní stres, rezervu zotavení a dynamickou odchylku od bezpečných nebo produktivních režimů.</p>
+
+  <h3>3. Prediktivní exekutivní vrstva</h3>
+  <p>Exekutivní vrstva identifikuje rané vzorce nestability a generuje stabilizační doporučení nebo řídicí signály dříve, než jsou dosaženy klasické prahy selhání.</p>
+
+  <h2>Jádrové interní technologie</h2>
+
+  <h3>CM — Kontextová paměť</h3>
+  <p>Kontextová paměť ukládá nedávnou dynamickou historii a kontext zotavení, což systému umožňuje vyhodnotit, zda je nestabilita izolovaná, přetrvávající, zhoršující se nebo vstupuje do metastabilního koridoru.</p>
+
+  <h3>ELI — Indikátor časné hranice</h3>
+  <p>Indikátor časné hranice detekuje přibližování k provozním hranicím dříve, než jsou spuštěny konvenční alarmy nebo tvrdé bezpečnostní limity.</p>
+
+  <h3>Vyhodnocení zohledňující metastabilitu</h3>
+  <p>GSC-X vyhodnocuje, zda systém pouze fluktuuje, degraduje, zotavuje se nebo se reorganizuje kolem metastabilního režimu. To architektuře umožňuje rozlišit neškodnou variaci od strukturálně relevantní nestability.</p>
+
+  <h2>Prediktivní stabilizační smyčka</h2>
+
+  <p>Základní provozní cyklus je:</p>
+
+  <ul>
+    <li>Pozorovat telemetrii a stav systému</li>
+    <li>Extrahovat indikátory dynamického stresu a nestability</li>
+    <li>Aktualizovat kontextovou paměť</li>
+    <li>Vyhodnotit indikátor časné hranice</li>
+    <li>Detekovat rizikový koridor nebo příležitost k zotavení</li>
+    <li>Generovat exekutivní stabilizační odezvu</li>
+    <li>Validovat odezvu prostřednictvím benchmarkové zpětné vazby</li>
+  </ul>
+
+  <h2>Integrační model</h2>
+
+  <p>GSC-X je navržen jako vrstva nezávislá na rozhraní. Může pracovat s offline datasety, simulacemi, digitálními dvojčaty, průmyslovou telemetrií, robotickými pipeline, daty monitorování spolehlivosti a budoucími rozhraními řízení v reálném čase.</p>
+
+  <ul>
+    <li>CSV a strukturovaná telemetrie</li>
+    <li>REST a vlastní API</li>
+    <li>OPC-UA / koncepty průmyslových bran</li>
+    <li>ROS a robotické pipeline</li>
+    <li>Prostředí digitálních dvojčat</li>
+    <li>Cloudová, lokální a edge runtime prostředí</li>
+  </ul>
+
+  <p><strong>Bez uzamčení na dodavatele.</strong> Architektura je zamýšlena tak, aby podporovala více domén bez vynucení nahrazení stávající infrastruktury.</p>
+
+  <h2>Validační pipeline</h2>
+
+  <p>Vývoj technologie se řídí workflow zaměřeným na validaci:</p>
+
+  <ul>
+    <li>Offline validace na reálných nebo benchmarkových datasetech</li>
+    <li>Simulační validace v kontrolovaných scénářích</li>
+    <li>Stresové testování prostřednictvím TRUE / endurance benchmarků</li>
+    <li>Mezidoménové porovnání proti baseline chování</li>
+    <li>Reportování připravené k publikaci a reprodukovatelné artefakty</li>
+    <li>Hardware-in-the-loop a cesty k nasazení</li>
+  </ul>
+
+  <h2>Stav technologie</h2>
+
+  <p>GSC-X je aktuálně implementován jako výzkumná a validační architektura s několika veřejnými sandboxovými prostředími, benchmarkovými výstupy, validačními reporty, publikacemi a podanými patentovými přihláškami.</p>
+
+  <p>Současné zaměření je mezidoménová validace, reprodukovatelnost, technické reportování a příprava na pilotní vyhodnocení s průmyslovými, spolehlivostními, robotickými, energetickými a vědeckými partnery.</p>
+
+</section>
+
+</main>
+
+</body>
+</html>

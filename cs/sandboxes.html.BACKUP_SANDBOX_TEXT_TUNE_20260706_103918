@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X CommandCenter</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+
+.cardiac-bg{
+background:
+linear-gradient(rgba(2,10,18,.35),rgba(2,10,18,.45)),
+url("../assets/cards/cardiac_card_bg.png");
+background-size:100%;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+
+
+.future-card{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+min-height:330px;
+border:1px dashed rgba(0,220,255,.35);
+background:rgba(2,10,18,.55);
+}
+
+.future-dots{
+display:flex;
+gap:18px;
+margin-bottom:28px;
+}
+
+.future-dots span{
+width:14px;
+height:14px;
+border-radius:50%;
+background:#17d8ff;
+box-shadow:0 0 18px #17d8ff;
+animation:pulseDots 1.8s infinite ease-in-out;
+}
+
+.future-dots span:nth-child(2){
+animation-delay:.3s;
+}
+
+.future-dots span:nth-child(3){
+animation-delay:.6s;
+}
+
+@keyframes pulseDots{
+0%,100%{opacity:.35;transform:scale(.9);}
+50%{opacity:1;transform:scale(1.15);}
+}
+
+
+
+.robotics-bg{
+position:relative;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="sandboxes.html" class="active">SANDBOXY</a>
+    <a href="publications.html">PUBLIKACE</a>
+    <a href="validation.html">VALIDACE</a>
+    <a href="reports.html">REPORTY</a>
+    <a href="repository.html">REPOZITÁŘ</a>
+    <a href="author.html">AUTOR</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../sandboxes.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="sandboxes">
+  <div class="eyebrow">SANDBOXOVÝ EKOSYSTÉM GSC-X</div>
+  <h1>SANDBOXY</h1>
+  <p>Doménově orientovaná validační a demonstrační prostředí postavená kolem architektury GSC-X Symbiont.</p>
+</section>
+
+<section class="sandbox-grid">
+
+  <div class="sandbox-card industrial-bg" onclick="window.open('https://sandbox.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Industrial Sandbox</h2>
+    <p>Prediktivní exekutivní stabilizace pro průmyslové procesy, automatizační systémy, výrobní linky a vysoce rizikové stroje.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card reliability-bg" onclick="window.open('https://reliability.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Reliability Sandbox</h2>
+    <p>Prediktivní údržba, monitorování zdravotního stavu, detekce anomálií a včasné varování pro systémy řízené degradací.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card fusion-bg" onclick="window.open('https://fusion.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Fusion Sandbox</h2>
+    <p>Monitorování nestability inspirované fúzí a exekutivní stabilizace pro plazmatu podobná nelineární dynamická prostředí.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card robotics-bg" onclick="window.open('https://robotics.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Robotics Sandbox</h2>
+    <p>Podpora prediktivní stabilizace a adaptivního řízení pro robotické systémy, automatizační workflow a prostředí embodied AI.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card battery-bg" onclick="window.open('https://battery.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Battery Sandbox</h2>
+    <p>Monitorování zdraví baterií, analýza degradace, prediktivní varování a validace spolehlivosti napříč nezávislými datasety.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card spaceflight-bg" onclick="window.open('https://spaceflight.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Spaceflight Sandbox</h2>
+    <p>Navádění, autonomie, stabilita trajektorie, podpora řízení mise a prediktivní stabilizace pro kosmické systémy.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card nuclear-bg" onclick="window.open('https://nuclear.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Nuclear Sandbox</h2>
+    <p>Prediktivní stabilizace a architektura včasného varování pro jaderně související monitoring, bezpečnost a vysoce rizikové dynamické systémy.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+  <div class="sandbox-card energy-bg" onclick="window.open('https://energy-network.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Energy Network Sandbox</h2>
+    <p>Výzkumný prototyp pro prediktivní stabilizaci, monitorování odolnosti a podporu exekutivního řízení v energetických sítích.</p>
+    <span class="status active">VALIDOVÁNO</span>
+    
+  </div>
+
+
+  <div class="sandbox-card cardiac-bg" onclick="window.open('https://cardiac.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Cardiac Sandbox</h2>
+    <p>Prediktivní exekutivní stabilizace, fyziologické monitorování, vyhodnocení včasného varování, phenotype-aware analýza a adaptivní podpora rozhodování pro srdeční dynamické systémy.</p>
+    <span class="status active">VALIDOVÁNO</span>
+  </div>
+
+
+
+
+
+  <div class="sandbox-card internet-bg" onclick="window.open('https://internet.gds-gsc-x.com', '_blank')" role="link">
+    <h2>Internet Infrastructure Sandbox</h2>
+    <p>Prediktivní stabilizace a exekutivní monitoring internetové infrastruktury, cloudových platforem, datacenter a digitálních komunikačních ekosystémů.</p>
+    <span class="status active">VALIDOVÁNO</span>
+  </div>
+
+
+<div class="sandbox-card future-card">
+
+<div class="future-dots">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<h2>Již brzy</h2>
+
+<p>Další GSC-X Sandbox je ve vývoji.</p>
+
+</div>
+
+
+
+</section>
+</main>
+
+</body>
+</html>

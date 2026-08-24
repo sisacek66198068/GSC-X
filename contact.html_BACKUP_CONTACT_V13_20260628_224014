@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X Contact</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.cards-image-section {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+.cards-image-section h2 {
+  color: #ffd34d;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.cards-image-section img {
+  width: 100%;
+  border: 1px solid #0e8da5;
+  border-radius: 14px;
+  box-shadow: 0 0 28px rgba(0,220,255,0.22);
+}
+</style>
+
+</head>
+<body class="contact-page">
+
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html" class="active">OVERVIEW</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="technology.html">TECHNOLOGY</a>
+    <a href="sandboxes.html">SANDBOXES</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="validation.html">VALIDATION</a>
+    <a href="reports.html">REPORTS</a>
+    <a href="repository.html">REPOSITORY</a>
+    <a href="author.html">AUTHOR</a>
+    <a href="contact.html" class="active">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">CONTACT</div>
+  <h1>CONTACT</h1>
+  <p><strong>Let's Discuss Your Next Stability Challenge</strong></p>
+  <p>Interested in improving reliability, reducing downtime, validating new technologies or launching a pilot project?</p>
+  <p><strong>We welcome discussions with industry, technology companies, research organizations, startups and public-sector partners.</strong></p>
+</section>
+
+<section class="about-content">
+
+<h2>Martin Štěpánů</h2>
+
+<p>
+<strong>Founder of GDS and GSC-X</strong><br>
+Independent Researcher · Executive AI Developer · Systems Innovator<br>
+<strong>Available for technical audits, pilot projects, research collaboration and technology licensing.</strong>
+</p>
+
+<hr>
+
+<h2>Contact Information</h2>
+
+<h3>Email</h3>
+<p>stepanumartin@gds-gsc-x.com</p>
+
+<h3>Phone</h3>
+<p>+420 737 315 405</p>
+
+<h3>Website</h3>
+<p>
+<a class="pub-link" href="https://gds-gsc-x.com" target="_blank">
+VISIT GDS-GSC-X →
+</a>
+</p>
+
+<h3>LinkedIn</h3>
+<p>
+<a class="pub-link"
+href="https://www.linkedin.com/in/martin-%C5%A1t%C4%9Bp%C3%A1n%C5%AF-147723407/"
+target="_blank">
+LINKEDIN PROFILE →
+</a>
+</p>
+
+<h3>ORCID</h3>
+<p>0009-0007-0409-6037</p>
+
+<h3>Business ID (CZ)</h3>
+<p>71985981</p>
+
+<h3>Location</h3>
+<p>
+Podkopná Lhota<br>
+Czech Republic
+</p>
+
+<hr>
+
+
+<h2>Ready to Collaborate?</h2>
+
+<p>
+Whether you are exploring a pilot project, independent technical audit,
+technology validation or long-term research collaboration, we would be
+pleased to discuss how GSC-X could support your organization.
+</p>
+
+<p>
+Every inquiry receives an individual technical review.
+</p>
+
+<p>
+Confidentiality can be protected under NDA whenever required.
+</p>
+
+<h2>Ready to Start?</h2>
+
+
+<p><strong>Let's discuss how GSC-X could help improve stability, reliability and operational resilience within your organization.</strong></p>
+
+<p><strong>Email:</strong> stepanumartin@gds-gsc-x.com</p>
+
+<p><strong>Phone:</strong> +420 737 315 405</p>
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+</body>
+</html>

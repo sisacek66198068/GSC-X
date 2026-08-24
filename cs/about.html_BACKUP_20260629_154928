@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSC-X O projektu</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="about-page">
+<header class="topbar">
+  <div class="brand"><span>GSC-X</span> CommandCenter</div>
+  <nav class="nav">
+    <a href="index.html">PŘEHLED</a>
+    <a href="about.html">O PROJEKTU</a>
+    <a href="services.html">SLUŽBY</a>
+    <a href="technology.html">TECHNOLOGIE</a>
+    <a href="../sandboxes.html">SANDBOXY</a>
+    <a href="../publications.html">PUBLIKACE</a>
+    <a href="../validation.html">VALIDACE</a>
+    <a href="../reports.html">REPORTY</a>
+    <a href="../repository.html">REPOZITÁŘ</a>
+    <a href="contact.html">KONTAKT</a>
+    <a href="../index.html">🇬🇧 EN</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="eyebrow">O PROJEKTU</div>
+  <h1>O PROJEKTU GSC-X</h1>
+  <p>Výzkumný a validační ekosystém zaměřený na prediktivní stabilitu, spolehlivost a řízení komplexních systémů.</p>
+</section>
+
+<section class="about-content">
+
+<h2>GDS / GSC-X</h2>
+<p>GSC-X vychází z širšího rámce GDS a navazuje na výzkum nelineární dynamiky, metastability, prediktivní diagnostiky a exekutivní stabilizace.</p>
+
+<h2>Praktické zaměření</h2>
+<p>Cílem není pouze akademická validace, ale také praktické ověření v reálných technických a průmyslových prostředích.</p>
+
+<h2>Současný stav</h2>
+<p>Projekt zahrnuje veřejné sandboxy, validační reporty, publikace, GitHub repozitář, OSF archiv a patent pending IP portfolio.</p>
+
+</section>
+</main>
+
+</body>
+</html>
