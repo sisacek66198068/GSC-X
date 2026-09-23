@@ -137,6 +137,54 @@ overflow:hidden;
 
 </style>
 
+
+<style id="gscx-uniform-sandbox-darkening">
+
+/* ==========================================================
+   GSC-X SANDBOX — UNIFORM BACKGROUND DARKNESS
+   Energy explicit background fix
+   ========================================================== */
+
+/* Energy Network: use the newly supplied asset */
+.energy-bg {
+  background-image: url("assets/sandbox-bg/Energy.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/*
+   Equal dark overlay across all real sandbox cards.
+   Only the background is visually darkened.
+   Text / headings / status remain unaffected.
+*/
+.sandbox-grid .sandbox-card:is(.industrial-bg,.reliability-bg,.fusion-bg,.robotics-bg,.battery-bg,.spaceflight-bg,.nuclear-bg,.energy-bg)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,rgba(3,16,23,.67),rgba(3,16,23,.86));
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Keep all card content above the dark overlay */
+.sandbox-grid .sandbox-card:is(.industrial-bg,.reliability-bg,.fusion-bg,.robotics-bg,.battery-bg,.spaceflight-bg,.nuclear-bg,.energy-bg) > * {
+  position: relative;
+  z-index: 1;
+}
+
+</style>
+
+
+<style id="gscx-uppercase-card-titles">
+/* Visual uppercase only — underlying text remains unchanged */
+.publication-card h3,
+.sandbox-card h3 {
+  text-transform: uppercase !important;
+}
+</style>
+
 </head>
 <body>
 

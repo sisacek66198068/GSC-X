@@ -49,6 +49,90 @@
 
 </style>
 
+
+<style id="gscx-publication-backgrounds">
+
+/* ==========================================================
+   GSC-X PUBLICATIONS — INDIVIDUAL BACKGROUNDS
+   ========================================================== */
+
+.publication-card {
+  position: relative;
+  overflow: hidden;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.pub-bg-gds {
+  background-image: url("assets/publication-bg/gds.png") !important;
+}
+
+.pub-bg-corridor {
+  background-image: url("assets/publication-bg/metastable-corridor.png") !important;
+}
+
+.pub-bg-regenerative {
+  background-image: url("assets/publication-bg/regenerative-metastability.png") !important;
+}
+
+.pub-bg-v7 {
+  background-image: url("assets/publication-bg/gscx-v7.png") !important;
+}
+
+.pub-bg-v91 {
+  background-image: url("assets/publication-bg/gscx-v91.png") !important;
+}
+
+.pub-bg-kernel {
+  background-image: url("assets/publication-bg/executive-kernel.png") !important;
+}
+
+/* Uniform readability layer */
+.publication-card:is(
+  .pub-bg-gds,
+  .pub-bg-corridor,
+  .pub-bg-regenerative,
+  .pub-bg-v7,
+  .pub-bg-v91,
+  .pub-bg-kernel
+)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3,16,23,.67),
+      rgba(3,16,23,.86)
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.publication-card:is(
+  .pub-bg-gds,
+  .pub-bg-corridor,
+  .pub-bg-regenerative,
+  .pub-bg-v7,
+  .pub-bg-v91,
+  .pub-bg-kernel
+) > * {
+  position: relative;
+  z-index: 1;
+}
+
+</style>
+
+
+<style id="gscx-uppercase-card-titles">
+/* Visual uppercase only — underlying text remains unchanged */
+.publication-card h3,
+.sandbox-card h3 {
+  text-transform: uppercase !important;
+}
+</style>
+
 </head>
 <body>
 
@@ -90,14 +174,28 @@
 
   <div class="publication-grid">
 
-    <div class="publication-card">
+    <div class="publication-card pub-bg-gds">
       <span class="status dev">FOUNDATION</span>
       <h3>GDS — Gravitational Dynamic System</h3>
       <p>The foundational framework that introduced dynamic stability as a governing principle of complex nonlinear systems.</p>
       <a class="pub-link" href="https://doi.org/10.5281/zenodo.20037474" target="_blank">READ PUBLICATION →</a>
     </div>
 
-    <div class="publication-card">
+    <div class="publication-card pub-bg-corridor">
+      <span class="status dev">DISCOVERY</span>
+      <h3>Emergent Metastable Corridors</h3>
+      <p>Research identifying metastable corridors as deeper dynamic structures supporting adaptive functioning and long-term survival in unstable environments.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20365379" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card pub-bg-regenerative">
+      <span class="status active">LATEST PUBLICATION</span>
+      <h3>Regenerative Metastability</h3>
+      <p>A validated investigation proposing regenerative metastability as a universal principle of organization and survival in complex systems.</p>
+      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20688368" target="_blank">READ PUBLICATION →</a>
+    </div>
+
+    <div class="publication-card pub-bg-v7">
       <span class="status dev">FIRST INTEGRATED ARCHITECTURE</span>
       <h3>GSC-X v7 – The First Symbiotic Executive</h3>
 
@@ -105,28 +203,14 @@
       <a class="pub-link" href="https://doi.org/10.5281/zenodo.19900728" target="_blank">READ PUBLICATION →</a>
     </div>
 
-    <div class="publication-card">
+    <div class="publication-card pub-bg-v91">
       <span class="status active">FLAGSHIP PUBLICATION</span>
       <h3>GSC-X v9.1 — Extended Benchmark Edition</h3>
       <p>Predictive nonlinear executive stabilization with improved benchmark performance, safety, productivity and reliability metrics.</p>
       <a class="pub-link" href="https://doi.org/10.5281/zenodo.20156104" target="_blank">READ PUBLICATION →</a>
     </div>
 
-    <div class="publication-card">
-      <span class="status dev">DISCOVERY</span>
-      <h3>Emergent Metastable Corridors</h3>
-      <p>Research identifying metastable corridors as deeper dynamic structures supporting adaptive functioning and long-term survival in unstable environments.</p>
-      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20365379" target="_blank">READ PUBLICATION →</a>
-    </div>
-
-    <div class="publication-card">
-      <span class="status active">LATEST PUBLICATION</span>
-      <h3>Regenerative Metastability</h3>
-      <p>A validated investigation proposing regenerative metastability as a universal principle of organization and survival in complex systems.</p>
-      <a class="pub-link" href="https://doi.org/10.5281/zenodo.20688368" target="_blank">READ PUBLICATION →</a>
-    </div>
-
-<div class="publication-card">
+    <div class="publication-card pub-bg-kernel">
       <span class="status active">NEW PUBLICATION</span>
       <h3>GSC-X Executive Kernel</h3>
       <p>The Executive Kernel introduces the unified core architecture of GSC-X, integrating executive state management, predictive stabilization, adaptive decision logic, and cross-domain orchestration into a reproducible kernel for complex dynamic systems.</p>
