@@ -1,0 +1,4 @@
+/* GDS detail reuses the approved section typography and shared navigation. */
+.gds-detail article{max-width:820px}.gds-detail article>section:first-child{margin-top:36px}.gds-detail .gds-back{margin-top:44px}.gds-detail .gds-back a{text-decoration:none}.gds-detail .gds-back a:hover{text-decoration:underline}.gds-detail .intro-copy p{max-width:620px}@media(max-width:480px){.gds-detail .intro-layout{align-items:center}}
+
+.gds-github-link{display:inline-flex;align-items:center;gap:10px;font-size:16px;text-decoration:none}.gds-github-link img{width:46.8px;height:35.1px;object-fit:contain;flex:none}.gds-github-link:hover{text-decoration:underline}.gds-github-link:focus-visible{outline:2px solid #fff;outline-offset:5px}
