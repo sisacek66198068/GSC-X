@@ -1,3 +1,25 @@
+<!-- GSC-X SCIENTIFIC RESEARCH PORTAL -->
+
+# GSC-X — SCIENTIFIC RESEARCH & VALIDATION
+
+# VĚDECKÝ VÝZKUM A VALIDAČNÍ DATA
+
+### 12 Research Domains · 13 Published CSV Datasets · CZ / EN
+
+## [OPEN SCIENTIFIC RESEARCH PORTAL / OTEVŘÍT VĚDECKÝ PORTÁL](research/PUBLIC_RESEARCH_PORTAL.md)
+
+**[Validation Index / Index validací](research/VALIDATION_INDEX.md)** |
+**[CSV Results / Výsledková data](research/spaceflight/results/)** |
+**[Intellectual Property / Duševní vlastnictví](research/INTELLECTUAL_PROPERTY.md)**
+
+> **EN:** Explore selected scientific validation results, reproducible
+> benchmark datasets and research documentation across GSC-X domains.
+>
+> **CZ:** Prohlédněte si vybrané výsledky vědeckých validací,
+> reprodukovatelná benchmarková data a dokumentaci výzkumu GSC-X.
+
+---
+
 # GSC-X — Generative Stability Control
 
 **Vendor-Independent Executive Architecture for Predictive Monitoring, Adaptive Control and Dynamic System Management**
@@ -147,32 +169,3 @@ Current development focuses on continued cross-domain validation, Executive Benc
 ---
 
 ### GSC-X — One Executive Architecture. Multiple Dynamic Domains.
-
-<!-- GSC-X SCIENTIFIC RESEARCH PORTAL -->
-
----
-
-## Scientific Research & Validation Data
-
-**English**
-
-Explore the GSC-X scientific research archive, selected
-CSV benchmark datasets, validation results and bilingual
-research documentation.
-
-- [Scientific Research Portal](research/PUBLIC_RESEARCH_PORTAL.md)
-- [Validation Index](research/VALIDATION_INDEX.md)
-- [Spaceflight — N3000 & Benchmark CSV](research/spaceflight/results/)
-- [Intellectual Property Policy](research/INTELLECTUAL_PROPERTY.md)
-
-**Česky**
-
-Prohlédněte si vědecký archiv GSC-X, vybrané validační
-výsledky, CSV soubory, srovnávací benchmarky a dvojjazyčnou
-výzkumnou dokumentaci.
-
-- [Vědecký výzkumný portál](research/PUBLIC_RESEARCH_PORTAL.md)
-- [Index validací](research/VALIDATION_INDEX.md)
-- [Spaceflight — N3000 a výsledkové CSV](research/spaceflight/results/)
-- [Ochrana duševního vlastnictví](research/INTELLECTUAL_PROPERTY.md)
-
