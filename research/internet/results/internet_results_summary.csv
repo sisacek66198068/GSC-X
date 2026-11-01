@@ -1,0 +1,4 @@
+domain,scenario,validation_class,metric_family,status,implementation_public
+internet,viral_event,TRUE_N10000,availability_latency_energy_dropped_requests,validated,no
+internet,datacenter_failure,TRUE_N10000,availability_latency_energy_dropped_requests,validated,no
+internet,compound_crisis,TRUE_N10000,availability_latency_energy_dropped_requests,validated,no

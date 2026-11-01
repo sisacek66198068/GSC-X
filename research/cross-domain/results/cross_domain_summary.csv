@@ -1,0 +1,10 @@
+domain,public_status,evidence_type,implementation_public
+industrial,validated,TRUE_N3000_TRUE_N10000,no
+fusion,validated,TRUE_N10000_extended,no
+nuclear,validated,TRUE_N10000,no
+battery,validated_or_active,multi_dataset_reliability,no
+cardiac,validated_or_active,cardiac_v1,no
+internet,validated_or_active,TRUE_N10000_summary,no
+executive_kernel,architecture_public,cross_domain_architecture,no
+spaceflight,pending_public_archive,guidance_lunar_summary,no
+robotics,pending_public_archive,robotics_summary,no
