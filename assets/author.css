@@ -17,3 +17,10 @@
 
 /* Full content-width application video between professional activities and current projects. */
 .author-application-video{width:100%}.author-application-video video{display:block;width:100%;height:auto;aspect-ratio:80/43;object-fit:contain;border-radius:12px;background:#000}
+
+.founder-profile .company-description{max-width:480px}
+.company-details{margin:28px 0 0}
+.company-details>div{margin:0 0 20px}
+.company-details dt{font-size:11px;line-height:1.5;color:#fff;margin-bottom:5px}
+.company-details dd{margin:0;font-size:14px;line-height:1.65;color:#fff}
+@media(min-width:761px){.founder-profile{padding-top:0}}
